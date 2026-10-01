@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="./styles/shared/header.css">
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <header class="site-header">
+
+        <div class="header-container">
+
+            <!-- Logo -->
+            <a href="index.html" class="logo">
+
+                <span class="logo-icon">
+                    <i class="fa-solid fa-motorcycle"></i>
+                </span>
+
+                <span class="company-name">
+                    CONSELHO
+                    <small>GROUP</small>
+                </span>
+
+            </a>
+
+
+            <!-- Desktop Navigation -->
+            <nav class="main-nav">
+
+                <a href="index.html" class="active">Home</a>
+
+                <a href="services.html">Services</a>
+
+                <a href="shop.html">Shop</a>
+
+                <a href="about.html">About</a>
+
+                <a href="contact.html">Contact</a>
+
+            </nav>
+
+
+            <!-- Header Action -->
+            <a href="booking.html" class="book-btn">
+                <i class="fa-regular fa-calendar"></i>
+                Book Service
+            </a>
+
+
+            <!-- Mobile Menu Button -->
+            <label for="menu-toggle" class="menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+
+        </div>
+
+
+        <!-- Mobile Navigation -->
+        <input type="checkbox" id="menu-toggle">
+
+        <nav class="mobile-nav">
+
+            <a href="index.html">
+                <i class="fa-solid fa-house"></i>
+                Home
+            </a>
+
+            <a href="services.html">
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+                Services
+            </a>
+
+            <a href="shop.html">
+                <i class="fa-solid fa-store"></i>
+                Shop
+            </a>
+
+            <a href="about.html">
+                <i class="fa-solid fa-circle-info"></i>
+                About
+            </a>
+
+            <a href="contact.html">
+                <i class="fa-solid fa-phone"></i>
+                Contact
+            </a>
+
+            <a href="booking.html" class="mobile-book-btn">
+                <i class="fa-regular fa-calendar"></i>
+                Book Service
+            </a>
+
+        </nav>
+
+    </header>
+
+    <section class="section hero-section">
+
+        <div class="hero-image-container">
+
+            <img alt="Motorcycle mechanic and bike" class="hero-image" src="./images/hero-images/big-boy-velocity.jpg">
+
+            <div class="hero-text">
+
+                <span class="hero-subtitle">
+                    PROFESSIONAL MOTORCYCLE CARE
+                </span>
+
+                <h1>
+                    KEEP YOUR BIKE
+                    <span>RUNNING AT ITS BEST</span>
+                </h1>
+
+                <p>
+                    Expert motorcycle servicing, repairs and maintenance
+                    to keep you safe, confident and ready for the road.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="booking.html" class="hero-btn primary-btn">
+                        <i class="fa-regular fa-calendar"></i>
+                        Book a Service
+                    </a>
+
+                    <a href="services.html" class="hero-btn secondary-btn">
+                        View Services
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- Slider indicators -->
+            <div class="hero-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="section services-section">
+        <span class="section-heading">
+            Our Services
+        </span>
+        <p class="section-subtext">
+            Keep your ride safe, fast, and reliable. Explore our full range of professional motorcycle maintenance,
+            repair, and performance services below.
+        </p>
+
+        <div class="services-grid">
+
+            <div class="service-card">
+
+                <img alt="service image" class="service-image" src="images/services/engen.jfif">
+
+                <span class="service-name">Engine Service</span>
+
+                <span class="service-desc">
+                    Professional engine inspection and servicing to keep your motorcycle running smoothly and reliably.
+                </span>
+                <span class="service-price">From <b>R 899</b></span>
+
+                <span class="service-link">Learn More</span>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <img alt="service image" class="service-image" src="images/services/brake-hub.jfif">
+
+                <span class="service-name">Brake Repairs</span>
+
+                <span class="service-desc">
+                    Brake inspection, repairs, and replacement of worn components to keep your stopping power safe and
+                    reliable.
+                </span>
+
+                <span class="service-price">From <b>R 200</b></span>
+
+                <span class="service-link">Learn More</span>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <img alt="service image" class="service-image" src="images/services/oil.jpg">
+
+                <span class="service-name">Oil Change</span>
+
+                <span class="service-desc">
+                    Fresh engine oil and filter servicing to reduce wear and help your motorcycle engine perform at its
+                    best.
+                </span>
+
+                <span class="service-price">From <b>R 100</b></span>
+
+                <span class="service-link">Learn More</span>
+
+            </div>
+
+            <div class="service-card">
+
+                <img alt="service image" class="service-image" src="images/services/battery.jpg">
+
+                <span class="service-name">Battery Services</span>
+
+                <span class="service-desc">
+                    Battery testing, replacement, and electrical checks to keep your bike starting reliably.
+                </span>
+
+                <span class="service-price">From <b>R 500</b></span>
+
+                <span class="service-link">Learn More</span>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <img alt="service image" class="service-image" src="images/hero-images/big-boy-2022-velocity.jpg">
+
+                <span class="service-name">Roadside Assistance</span>
+
+                <span class="service-desc">
+                    Get quick roadside help when your bike breaks down or you experience a mechanical problem.
+                </span>
+
+                <span class="service-price">From <b>R 350</b></span>
+
+                <a class="service-link">Learn More</a>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <img alt="service image" class="service-image" src="images/services/sprocket-chain.webp">
+
+                <span class="service-name">Chain and Sprocket</span>
+
+                <span class="service-desc">
+                    Inspect, adjust, clean, and replace chains and sprockets when needed.
+                </span>
+
+                <span class="service-price">From <b>R 650</b> Set</span>
+
+                <a class="service-link">Learn More</a>
+
+            </div>
+
+        </div>
+
+
+        <a href="services.html" class="all-services-link">
+            <i class="fa-solid fa-eye"></i>
+            View All Services
+        </a>
+
+    </section>
+
+
+
+
+    <section class="section why-section">
+
+        <div class="why-container">
+
+            <!-- Section heading -->
+            <div class="section-heading">
+
+                <span class="section-subtitle">
+                    WHY CHOOSE US
+                </span>
+
+                <h2>
+                    WE KEEP YOUR <span>RIDE READY</span>
+                </h2>
+
+                <p>
+                    Reliable motorcycle service, quality parts and experienced
+                    mechanics you can trust.
+                </p>
+
+            </div>
+
+
+            <!-- Features -->
+            <div class="why-grid">
+
+                <div class="why-card">
+
+                    <div class="why-icon">
+                        <i class="fa-solid fa-screwdriver-wrench"></i>
+                    </div>
+
+                    <h3>Experienced Mechanics</h3>
+
+                    <p>
+                        Skilled mechanics with experience handling
+                        a wide range of motorcycle repairs and services.
+                    </p>
+
+                </div>
+
+
+                <div class="why-card">
+
+                    <div class="why-icon">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+
+                    <h3>Fast Service</h3>
+
+                    <p>
+                        We understand that your bike keeps you moving,
+                        so we work efficiently to get you back on the road.
+                    </p>
+
+                </div>
+
+
+                <div class="why-card">
+
+                    <div class="why-icon">
+                        <i class="fa-solid fa-gears"></i>
+                    </div>
+
+                    <h3>Quality Parts</h3>
+
+                    <p>
+                        We use reliable parts and products to keep
+                        your motorcycle performing at its best.
+                    </p>
+
+                </div>
+
+
+                <div class="why-card">
+
+                    <div class="why-icon">
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+
+                    <h3>Customer Focused</h3>
+
+                    <p>
+                        Honest service and attention to detail from
+                        the moment you bring your bike to us.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="how-it-works section">
+
+        <div class="section-heading">
+            <span class="section-label">HOW IT WORKS</span>
+            <h2>Get Your Bike <span>Back on the Road</span></h2>
+            <p>
+                Getting your motorcycle serviced doesn't have to be complicated.
+                Follow these simple steps and we'll take care of the rest.
+            </p>
+        </div>
+
+        <div class="steps-container">
+
+            <!-- Step 1 -->
+            <div class="step-card">
+
+                <div class="step-number">01</div>
+
+                <div class="step-icon">
+                    <i class="fa-solid fa-phone"></i>
+                </div>
+
+                <h3>Contact Us</h3>
+
+                <p>
+                    Tell us what is wrong with your bike or which service you need.
+                </p>
+
+            </div>
+
+
+            <!-- Step 2 -->
+            <div class="step-card">
+
+                <div class="step-number">02</div>
+
+                <div class="step-icon">
+                    <i class="fa-solid fa-motorcycle"></i>
+                </div>
+
+                <h3>Bring Your Bike</h3>
+
+                <p>
+                    Bring your motorcycle to our workshop at a convenient time.
+                </p>
+
+            </div>
+
+
+            <!-- Step 3 -->
+            <div class="step-card">
+
+                <div class="step-number">03</div>
+
+                <div class="step-icon">
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                </div>
+
+                <h3>We Repair It</h3>
+
+                <p>
+                    We inspect your bike and carry out the required service or repairs.
+                </p>
+
+            </div>
+
+
+            <!-- Step 4 -->
+            <div class="step-card">
+
+                <div class="step-number">04</div>
+
+                <div class="step-icon">
+                    <i class="fa-solid fa-road"></i>
+                </div>
+
+                <h3>Back on the Road</h3>
+
+                <p>
+                    Collect your bike and get back on the road with confidence.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- CTA -->
+        <div class="how-it-works-cta">
+
+            <div>
+                <h3>Ready to get your bike back on the road?</h3>
+
+                <p>
+                    Book a service or speak to us about your motorcycle.
+                </p>
+            </div>
+
+            <a href="#" class="cta-button">
+                Book a Service
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <section class="roadside-section">
+
+        <div class="roadside-container">
+
+            <!-- Image -->
+            <div class="roadside-image">
+                <img src="images/hero-images/big-boy-velocity-2.jpg"
+                    alt="Mechanic helping a motorcycle rider on the roadside">
+            </div>
+
+
+            <!-- Content -->
+            <div class="roadside-content">
+
+                <span class="roadside-label">
+                    ROADSIDE ASSISTANCE
+                </span>
+
+                <h2>
+                    Need Help <span>Where You Are?</span>
+                </h2>
+
+                <p class="roadside-intro">
+                    Bike won't start? Stuck on the side of the road?
+                    Don't worry — you don't always have to bring your bike
+                    to us. We can come to you.
+                </p>
+
+
+                <div class="roadside-services">
+
+                    <div class="roadside-service">
+                        <div class="roadside-icon">
+                            <i class="fa-solid fa-battery-quarter"></i>
+                        </div>
+
+                        <div>
+                            <h3>Battery Problems</h3>
+                            <p>
+                                Battery flat or bike struggling to start?
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="roadside-service">
+                        <div class="roadside-icon">
+                            <i class="fa-solid fa-screwdriver-wrench"></i>
+                        </div>
+
+                        <div>
+                            <h3>On-Site Repairs</h3>
+                            <p>
+                                We'll diagnose and repair the problem where possible.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="roadside-service">
+                        <div class="roadside-icon">
+                            <i class="fa-solid fa-motorcycle"></i>
+                        </div>
+
+                        <div>
+                            <h3>Bike Won't Start</h3>
+                            <p>
+                                We'll help find out what's keeping your bike off the road.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="roadside-actions">
+
+                    <a href="#" class="roadside-button">
+                        <i class="fa-solid fa-phone"></i>
+                        Call for Assistance
+                    </a>
+
+                    <a href="#" class="roadside-link">
+                        Request Assistance
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="reviews-section">
+
+        <div class="reviews-heading">
+
+            <span class="reviews-label">CUSTOMER REVIEWS</span>
+
+            <h2>What Our <span>Customers Say</span></h2>
+
+            <p>
+                See what riders have to say about their experience with our
+                motorcycle service and repairs.
+            </p>
+
+        </div>
+
+
+        <div class="reviews-grid">
+
+            <!-- Review 1 -->
+            <div class="review-card">
+
+                <div class="review-top">
+
+                    <div class="customer-info">
+
+                        <div class="customer-avatar">
+                            T
+                        </div>
+
+                        <div>
+                            <h3>Thabo M.</h3>
+                            <span>Delivery Rider</span>
+                        </div>
+
+                    </div>
+
+                    <div class="review-stars">
+                        ★★★★★
+                    </div>
+
+                </div>
+
+
+                <p class="review-text">
+                    "My bike broke down while I was working and they came
+                    out to help me. The problem was sorted quickly and I was
+                    back on the road."
+                </p>
+
+
+                <div class="review-service">
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                    Roadside Assistance
+                </div>
+
+            </div>
+
+
+            <!-- Review 2 -->
+            <div class="review-card">
+
+                <div class="review-top">
+
+                    <div class="customer-info">
+
+                        <div class="customer-avatar">
+                            J
+                        </div>
+
+                        <div>
+                            <h3>Jason K.</h3>
+                            <span>Motorcycle Owner</span>
+                        </div>
+
+                    </div>
+
+                    <div class="review-stars">
+                        ★★★★★
+                    </div>
+
+                </div>
+
+
+                <p class="review-text">
+                    "Had my chain and sprockets replaced. The service was
+                    professional, quick and the bike felt great afterwards.
+                    Definitely coming back."
+                </p>
+
+
+                <div class="review-service">
+                    <i class="fa-solid fa-link"></i>
+                    Chain & Sprocket
+                </div>
+
+            </div>
+
+
+            <!-- Review 3 -->
+            <div class="review-card">
+
+                <div class="review-top">
+
+                    <div class="customer-info">
+
+                        <div class="customer-avatar">
+                            M
+                        </div>
+
+                        <div>
+                            <h3>Michael R.</h3>
+                            <span>Delivery Rider</span>
+                        </div>
+
+                    </div>
+
+                    <div class="review-stars">
+                        ★★★★★
+                    </div>
+
+                </div>
+
+
+                <p class="review-text">
+                    "I needed my bike serviced before a busy week of
+                    deliveries. They explained everything clearly and
+                    had the bike ready when promised."
+                </p>
+
+
+                <div class="review-service">
+                    <i class="fa-solid fa-oil-can"></i>
+                    Bike Service
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="reviews-bottom">
+
+            <p>
+                Had a good experience with us?
+            </p>
+
+            <a href="#" class="review-button">
+                Leave a Review
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <section class="final-cta">
+
+        <div class="final-cta-content">
+
+            <span class="final-cta-label">
+                READY TO RIDE?
+            </span>
+
+            <h2>
+                Keep Your Bike <span>Road Ready.</span>
+            </h2>
+
+            <p>
+                Whether you need a routine service, a repair, or roadside
+                assistance, we're here to help get you back on the road.
+            </p>
+
+            <div class="final-cta-buttons">
+
+                <a href="#" class="final-cta-button">
+                    Book a Service
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+                <a href="#" class="final-cta-phone">
+                    <i class="fa-solid fa-phone"></i>
+                    Contact Us
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+    <footer class="site-footer">
+
+        <div class="footer-container">
+
+            <!-- Brand -->
+            <div class="footer-brand">
+
+                <a href="#" class="footer-logo">
+                    <span>CONSELHO</span>GRUPO
+                </a>
+
+                <p>
+                    Reliable motorcycle repairs, servicing and roadside
+                    assistance to keep you safely on the road.
+                </p>
+
+                <div class="footer-socials">
+
+                    <a href="#" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#" aria-label="WhatsApp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Quick Links -->
+            <div class="footer-column">
+
+                <h3>Quick Links</h3>
+
+                <a href="#">Home</a>
+                <a href="#">Services</a>
+                <a href="#">About Us</a>
+                <a href="#">Contact</a>
+
+            </div>
+
+
+            <!-- Services -->
+            <div class="footer-column">
+
+                <h3>Services</h3>
+
+                <a href="#">Bike Servicing</a>
+                <a href="#">Brake Repairs</a>
+                <a href="#">Chain & Sprocket</a>
+                <a href="#">Battery Services</a>
+                <a href="#">Roadside Assistance</a>
+
+            </div>
+
+
+            <!-- Contact -->
+            <div class="footer-column footer-contact">
+
+                <h3>Get In Touch</h3>
+
+                <a href="tel:27691736131">
+                    <i class="fa-solid fa-phone"></i>
+                    27691736131
+                </a>
+
+                <a href="https://wa.me/27691736131">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    WhatsApp Us
+                </a>
+
+                <a href="#">
+                    <i class="fa-solid fa-envelope"></i>
+                    info@bikefix.co.za
+                </a>
+
+                <a href="#">
+                    <i class="fa-solid fa-location-dot"></i>
+                    Cape Town, South Africa
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- Bottom -->
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 BikeFix. All rights reserved.
+            </p>
+
+            <div class="footer-bottom-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+
+
+
+</body>
+
+</html>

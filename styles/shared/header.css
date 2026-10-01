@@ -1,0 +1,369 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.section h2 span {
+    color: #e63946;
+}
+
+body {
+    
+    font-family: roboto;
+    background-color: white;
+    padding-top: 60px;
+   
+
+}
+
+section {
+    box-shadow: 0 2px 5px rgba(164, 162, 162, 0.12);
+}
+
+.site-header {
+    width: 100%;
+    background:black;
+    position: relative;
+    border-bottom: 1px solid #000000;
+    position:fixed;
+    z-index: 1000;
+    top: 0;
+}
+
+
+/* ================================
+   HEADER CONTAINER
+================================ */
+
+.header-container {
+    max-width: 1200px;
+    height: 80px;
+    margin: 0 auto;
+
+    padding: 0 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* ================================
+   LOGO
+================================ */
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    text-decoration: none;
+    color: white;
+}
+
+
+/* Motorcycle icon */
+
+.logo-icon {
+    width: 45px;
+    height: 45px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 2px solid #e63946;
+    border-radius: 50%;
+
+    color: #1b06b8;
+    font-size: 20px;
+}
+
+
+/* Company name */
+
+.company-name {
+    display: flex;
+    flex-direction: column;
+
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.company-name small {
+    font-size: 10px;
+    letter-spacing: 3px;
+    color: blue;
+    margin-top: 3px;
+}
+
+
+/* ================================
+   DESKTOP NAVIGATION
+================================ */
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.main-nav a {
+    position: relative;
+
+    text-decoration: none;
+    color: #cfcfcf;
+
+    font-size: 15px;
+    font-weight: 500;
+
+    padding: 8px 0;
+
+    transition: 0.3s ease;
+}
+
+.main-nav a:hover {
+    color: white;
+}
+
+
+/* Active page */
+
+.main-nav a.active {
+    color: white;
+}
+
+
+/* Red line under active page */
+
+.main-nav a.active::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: 0;
+
+    width: 100%;
+    height: 2px;
+
+    background: #e63946;
+}
+
+
+/* ================================
+   BOOK SERVICE BUTTON
+================================ */
+
+.book-btn {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    padding: 12px 20px;
+
+    background: #e63946;
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 5px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    transition: 0.3s ease;
+}
+
+.book-btn:hover {
+    background: #ff4757;
+    transform: translateY(-2px);
+}
+
+
+/* ================================
+   MOBILE MENU BUTTON
+================================ */
+
+.menu-btn {
+    display: none;
+
+    color: white;
+    font-size: 24px;
+
+    cursor: pointer;
+}
+
+
+/* Hide checkbox */
+
+#menu-toggle {
+    display: none;
+}
+
+
+/* ================================
+   MOBILE NAVIGATION
+================================ */
+
+.mobile-nav {
+    display: none;
+}
+
+
+/* ================================
+   TABLET
+================================ */
+
+@media (max-width: 900px) {
+
+    .header-container {
+        padding: 0 20px;
+    }
+
+    .main-nav {
+        gap: 20px;
+    }
+
+    .main-nav a {
+        font-size: 14px;
+    }
+
+    .book-btn {
+        padding: 10px 15px;
+    }
+
+}
+
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 700px) {
+
+    .header-container {
+        height: 70px;
+        padding: 0 18px;
+    }
+
+
+    /* Logo */
+
+    .logo-icon {
+        width: 40px;
+        height: 40px;
+
+        font-size: 18px;
+    }
+
+    .company-name {
+        font-size: 16px;
+    }
+
+    .company-name small {
+        font-size: 8px;
+    }
+
+
+    /* Hide desktop navigation */
+
+    .main-nav {
+        display: none;
+    }
+
+
+    /* Hide desktop button */
+
+    .book-btn {
+        display: none;
+    }
+
+
+    /* Show hamburger */
+
+    .menu-btn {
+        display: block;
+    }
+
+
+    /* Mobile menu */
+
+    .mobile-nav {
+        width: 100%;
+
+        background: #111;
+
+        border-top: 1px solid #242424;
+
+        padding: 15px 20px;
+
+        display: none;
+
+        flex-direction: column;
+        gap: 5px;
+    }
+
+
+    /* Show mobile menu */
+
+    #menu-toggle:checked~.mobile-nav {
+        display: flex;
+    }
+
+
+    /* Mobile links */
+
+    .mobile-nav a {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+
+        padding: 14px 10px;
+
+        color: #ddd;
+
+        text-decoration: none;
+
+        border-radius: 5px;
+
+        font-size: 15px;
+
+        transition: 0.3s ease;
+    }
+
+
+    .mobile-nav a i {
+        width: 20px;
+        color: #e63946;
+    }
+
+
+    .mobile-nav a:hover {
+        background: #1d1d1d;
+        color: white;
+    }
+
+
+    /* Mobile booking button */
+
+    .mobile-nav .mobile-book-btn {
+        margin-top: 10px;
+
+        justify-content: center;
+
+        background: #e63946;
+
+        color: white;
+
+        font-weight: 600;
+    }
+
+
+    .mobile-nav .mobile-book-btn i {
+        color: white;
+    }
+
+}

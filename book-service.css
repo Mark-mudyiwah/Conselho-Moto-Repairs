@@ -1,0 +1,415 @@
+.booking-hero {
+    min-height: 420px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 70px 5%;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7)
+        ),
+        url("../images/hero-images/big-boy-2022-velocity.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.booking-hero-content {
+    width: 100%;
+    max-width: 900px;
+
+    text-align: center;
+
+    color: white;
+}
+
+.booking-label {
+    display: inline-block;
+
+    margin-bottom: 15px;
+
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+
+    color: #e10600;
+}
+
+.booking-hero h1 {
+    margin: 0;
+
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    line-height: 1.05;
+}
+
+.booking-hero h1 span {
+    color: #e10600;
+}
+
+.booking-hero p {
+    max-width: 650px;
+
+    margin: 25px auto 35px;
+
+    font-size: 1.05rem;
+    line-height: 1.7;
+
+    color: #e5e5e5;
+}
+
+
+/* INFO ITEMS */
+
+.booking-hero-info {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.booking-info-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.booking-info-item i {
+    color: #e10600;
+    font-size: 18px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .booking-hero {
+        min-height: 450px;
+        padding: 60px 20px;
+    }
+
+    .booking-hero h1 {
+        font-size: 2.6rem;
+    }
+
+    .booking-hero p {
+        font-size: 0.95rem;
+    }
+
+    .booking-hero-info {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 15px;
+
+        width: fit-content;
+        margin: 0 auto;
+    }
+
+}
+
+
+
+
+/*form section*/
+
+
+.booking-form-section {
+    padding: 80px 5%;
+    background: #f7f7f7;
+}
+
+.booking-form-header {
+    max-width: 700px;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+
+.section-label {
+    display: inline-block;
+
+    margin-bottom: 12px;
+
+    color: #e10600;
+
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.booking-form-header h2 {
+    margin: 0 0 15px;
+
+    font-size: clamp(2rem, 4vw, 3rem);
+    color: #111;
+}
+
+.booking-form-header p {
+    margin: 0;
+
+    color: #666;
+    line-height: 1.7;
+}
+
+
+/* FORM */
+
+.booking-form {
+    max-width: 950px;
+    margin: 0 auto;
+
+    background: #fff;
+
+    padding: 45px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+}
+
+
+/* FORM SECTIONS */
+
+.form-group-section {
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.form-section-title {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+
+    margin-bottom: 30px;
+}
+
+.form-section-title > span {
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background: #b90000;
+    color: #fff;
+
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+.form-section-title h3 {
+    margin: 0 0 4px;
+
+    font-size: 1.25rem;
+    color: #111;
+}
+
+.form-section-title p {
+    margin: 0;
+
+    font-size: 0.9rem;
+    color: #777;
+}
+
+
+/* GRID */
+
+.form-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 22px;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.full-width {
+    grid-column: 1 / -1;
+}
+
+
+/* LABELS */
+
+.form-field label {
+    font-size: 0.9rem;
+    font-weight: 600;
+
+    color: #222;
+}
+
+
+/* INPUTS */
+
+.form-field input,
+.form-field select,
+.form-field textarea {
+
+    width: 100%;
+
+    padding: 14px 15px;
+
+    border: 1px solid #ddd;
+    border-radius: 5px;
+
+    background: #fff;
+
+    font-family: inherit;
+    font-size: 0.95rem;
+
+    color: #222;
+
+    outline: none;
+
+    transition: 0.2s ease;
+
+    box-sizing: border-box;
+}
+
+.form-field textarea {
+    resize: vertical;
+    min-height: 140px;
+}
+
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus {
+    border-color: #e10600;
+
+    box-shadow: 0 0 0 3px rgba(225, 6, 0, 0.08);
+}
+
+.form-field input::placeholder,
+.form-field textarea::placeholder {
+    color: #aaa;
+}
+
+
+/* SUBMIT */
+
+.booking-submit {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 25px;
+}
+
+.booking-submit p {
+    margin: 0;
+
+    font-size: 0.85rem;
+    line-height: 1.5;
+
+    color: #777;
+}
+
+.booking-submit p i {
+    margin-right: 5px;
+
+    color: #e10600;
+}
+
+.booking-submit-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+
+    padding: 15px 25px;
+
+    border: none;
+    border-radius: 5px;
+
+    background: #e10600;
+    color: #fff;
+
+    font-family: inherit;
+    font-size: 0.95rem;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+.booking-submit-button:hover {
+    background: #b90000;
+
+    transform: translateY(-2px);
+}
+
+.booking-submit-button i {
+    transition: 0.3s ease;
+}
+
+.booking-submit-button:hover i {
+    transform: translateX(4px);
+}
+
+
+/* TABLET */
+
+@media (max-width: 700px) {
+
+    .booking-form-section {
+        padding: 60px 20px;
+    }
+
+    .booking-form {
+        padding: 30px 25px;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .full-width {
+        grid-column: auto;
+    }
+
+    .booking-submit {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .booking-submit-button {
+        justify-content: center;
+    }
+
+}
+
+
+/* SMALL MOBILE */
+
+@media (max-width: 450px) {
+
+    .booking-form {
+        padding: 25px 18px;
+    }
+
+    .form-section-title {
+        gap: 10px;
+    }
+
+    .form-section-title h3 {
+        font-size: 1.1rem;
+    }
+
+}
