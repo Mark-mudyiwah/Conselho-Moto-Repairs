@@ -11,7 +11,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="./styles/shared/header.css">
-      <link rel="stylesheet" href="./styles/shared/footer.css">
+    <link rel="stylesheet" href="./styles/shared/footer.css">
     <link rel="stylesheet" href="./book-service.css">
 </head>
 
@@ -38,21 +38,24 @@
             <!-- Desktop Navigation -->
             <nav class="main-nav">
 
-                <a href="index.html" >Home</a>
+                <a href="index.html">Home</a>
 
                 <a href="services.html">Services</a>
 
-                <a href="shop.html">Shop</a>
+                <a href="book-a-service.html"  class="active">Booking</a>
 
                 <a href="about.html">About</a>
 
-                <a href="contact.html"class="active">Contact</a>
+                <a href="contact.html">Contact</a>
 
             </nav>
 
 
             <!-- Header Action -->
-           
+            <a href="road-assistance.html" class="book-btn">
+                <i class="fa-regular fa-calendar"></i>
+                Request Assistance
+            </a>
 
 
             <!-- Mobile Menu Button -->
@@ -78,9 +81,9 @@
                 Services
             </a>
 
-            <a href="shop.html">
-                <i class="fa-solid fa-store"></i>
-                Shop
+            <a href="book-a-service.html">
+                <i class="fa-solid fa-book"></i>
+                Booking
             </a>
 
             <a href="about.html">
@@ -93,9 +96,9 @@
                 Contact
             </a>
 
-            <a href="booking.html" class="mobile-book-btn">
+            <a href="road-assistance.html" class="mobile-book-btn">
                 <i class="fa-regular fa-calendar"></i>
-                Book Service
+                Request Assistance
             </a>
 
         </nav>
@@ -106,356 +109,303 @@
 
     <section class="booking-hero">
 
-    <div class="booking-hero-content">
+        <div class="booking-hero-content">
 
-        <span class="booking-label">BOOK A SERVICE</span>
+            <span class="booking-label">BOOK A SERVICE</span>
 
-        <h1>
-            Keep Your Bike
-            <span>Road Ready</span>
-        </h1>
-
-        <p>
-            Tell us what your bike needs and choose your preferred
-            service. We'll get in touch to confirm your booking.
-        </p>
-
-        <div class="booking-hero-info">
-
-            <div class="booking-info-item">
-                <i class="fa-solid fa-wrench"></i>
-                <span>Professional Service</span>
-            </div>
-
-            <div class="booking-info-item">
-                <i class="fa-solid fa-calendar-check"></i>
-                <span>Flexible Booking</span>
-            </div>
-
-            <div class="booking-info-item">
-                <i class="fa-solid fa-motorcycle"></i>
-                <span>Motorbike Specialists</span>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<section class="section booking-form-section">
-
-    <div class="booking-form-header">
-
-        <span class="section-label">SERVICE BOOKING</span>
-
-        <h2>Tell Us About <span>Your Bike</span></h2>
-
-        <p>
-            Fill in the details below and we'll contact you to confirm
-            your service and preferred booking time.
-        </p>
-
-    </div>
-
-
-    <form class="booking-form" id="bookingForm">
-
-        <!-- CUSTOMER DETAILS -->
-        <div class="form-group-section">
-
-            <div class="form-section-title">
-                <span>01</span>
-
-                <div>
-                    <h3>Your Details</h3>
-                    <p>How can we contact you?</p>
-                </div>
-            </div>
-
-            <div class="form-grid">
-
-                <div class="form-field">
-                    <label for="fullName">Full Name</label>
-
-                    <input
-                        type="text"
-                        id="fullName"
-                        name="fullName"
-                        placeholder="Enter your full name"
-                        required
-                    >
-                </div>
-
-
-                <div class="form-field">
-                    <label for="phone">Phone Number</label>
-
-                    <input
-                        type="tel"
-                        id="phone"
-                        name="phone"
-                        placeholder="e.g. 071 234 5678"
-                        required
-                    >
-                </div>
-
-
-                <div class="form-field full-width">
-                    <label for="email">Email Address</label>
-
-                    <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        placeholder="Enter your email address"
-                    >
-                </div>
-
-            </div>
-
-        </div>
-
-
-        <!-- BIKE DETAILS -->
-        <div class="form-group-section">
-
-            <div class="form-section-title">
-                <span>02</span>
-
-                <div>
-                    <h3>Bike Details</h3>
-                    <p>Tell us about the bike you're bringing in.</p>
-                </div>
-            </div>
-
-            <div class="form-grid">
-
-                <div class="form-field">
-                    <label for="bikeMake">Bike Make</label>
-
-                    <input
-                        type="text"
-                        id="bikeMake"
-                        name="bikeMake"
-                        placeholder="e.g. Honda"
-                        required
-                    >
-                </div>
-
-
-                <div class="form-field">
-                    <label for="bikeModel">Bike Model</label>
-
-                    <input
-                        type="text"
-                        id="bikeModel"
-                        name="bikeModel"
-                        placeholder="e.g. CB125F"
-                        required
-                    >
-                </div>
-
-
-                <div class="form-field">
-                    <label for="bikeYear">Year</label>
-
-                    <input
-                        type="number"
-                        id="bikeYear"
-                        name="bikeYear"
-                        placeholder="e.g. 2023"
-                        min="1900"
-                        max="2099"
-                    >
-                </div>
-
-
-                <div class="form-field">
-                    <label for="registration">Registration Number</label>
-
-                    <input
-                        type="text"
-                        id="registration"
-                        name="registration"
-                        placeholder="e.g. CA 123-456"
-                    >
-                </div>
-
-            </div>
-
-        </div>
-
-
-        <!-- SERVICE DETAILS -->
-        <div class="form-group-section">
-
-            <div class="form-section-title">
-                <span>03</span>
-
-                <div>
-                    <h3>Service Details</h3>
-                    <p>What does your bike need?</p>
-                </div>
-            </div>
-
-            <div class="form-grid">
-
-                <div class="form-field full-width">
-
-                    <label for="service">
-                        Select Service
-                    </label>
-
-                    <select id="service" name="service" required>
-
-                        <option value="">
-                            Select a service
-                        </option>
-
-                        <option value="full-service">
-                            Full Motorcycle Service
-                        </option>
-
-                        <option value="oil-change">
-                            Oil Change
-                        </option>
-
-                        <option value="brake-repair">
-                            Brake Repairs
-                        </option>
-
-                        <option value="battery-service">
-                            Battery Services
-                        </option>
-
-                        <option value="chain-sprocket">
-                            Chain & Sprocket
-                        </option>
-
-                        <option value="tyre-service">
-                            Tyre Service
-                        </option>
-
-                        <option value="electrical">
-                            Electrical Repairs
-                        </option>
-
-                        <option value="other">
-                            Other / Not Sure
-                        </option>
-
-                    </select>
-
-                </div>
-
-
-                <div class="form-field">
-
-                    <label for="preferredDate">
-                        Preferred Date
-                    </label>
-
-                    <input
-                        type="date"
-                        id="preferredDate"
-                        name="preferredDate"
-                        required
-                    >
-
-                </div>
-
-
-                <div class="form-field">
-
-                    <label for="preferredTime">
-                        Preferred Time
-                    </label>
-
-                    <select
-                        id="preferredTime"
-                        name="preferredTime"
-                        required
-                    >
-
-                        <option value="">
-                            Select a time
-                        </option>
-
-                        <option value="08:00">08:00</option>
-                        <option value="09:00">09:00</option>
-                        <option value="10:00">10:00</option>
-                        <option value="11:00">11:00</option>
-                        <option value="12:00">12:00</option>
-                        <option value="13:00">13:00</option>
-                        <option value="14:00">14:00</option>
-                        <option value="15:00">15:00</option>
-                        <option value="16:00">16:00</option>
-
-                    </select>
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-        <!-- ADDITIONAL INFORMATION -->
-        <div class="form-group-section">
-
-            <div class="form-section-title">
-                <span>04</span>
-
-                <div>
-                    <h3>Additional Information</h3>
-                    <p>Tell us anything else we should know.</p>
-                </div>
-            </div>
-
-            <div class="form-field">
-
-                <label for="message">
-                    Describe the Problem or Service Needed
-                </label>
-
-                <textarea
-                    id="message"
-                    name="message"
-                    rows="6"
-                    placeholder="Tell us about any problems you're experiencing with your bike..."
-                ></textarea>
-
-            </div>
-
-        </div>
-
-
-        <!-- SUBMIT -->
-        <div class="booking-submit">
+            <h1>
+                Keep Your Bike
+                <span>Road Ready</span>
+            </h1>
 
             <p>
-                <i class="fa-solid fa-circle-info"></i>
-
-                Your booking is not confirmed until we contact you.
+                Tell us what your bike needs and choose your preferred
+                service. We'll get in touch to confirm your booking.
             </p>
 
-            <button type="submit" class="booking-submit-button">
+            <div class="booking-hero-info">
 
-                Request Booking
+                <div class="booking-info-item">
+                    <i class="fa-solid fa-wrench"></i>
+                    <span>Professional Service</span>
+                </div>
 
-                <i class="fa-solid fa-arrow-right"></i>
+                <div class="booking-info-item">
+                    <i class="fa-solid fa-calendar-check"></i>
+                    <span>Flexible Booking</span>
+                </div>
 
-            </button>
+                <div class="booking-info-item">
+                    <i class="fa-solid fa-motorcycle"></i>
+                    <span>Motorbike Specialists</span>
+                </div>
+
+            </div>
 
         </div>
 
-    </form>
+    </section>
 
-</section>
 
-    
+    <section class="section booking-form-section">
+
+        <div class="booking-form-header">
+
+            <span class="section-label">SERVICE BOOKING</span>
+
+            <h2>Tell Us About <span>Your Bike</span></h2>
+
+            <p>
+                Fill in the details below and we'll contact you to confirm
+                your service and preferred booking time.
+            </p>
+
+        </div>
+
+
+        <form class="booking-form" id="bookingForm">
+
+            <!-- CUSTOMER DETAILS -->
+            <div class="form-group-section">
+
+                <div class="form-section-title">
+                    <span>01</span>
+
+                    <div>
+                        <h3>Your Details</h3>
+                        <p>How can we contact you?</p>
+                    </div>
+                </div>
+
+                <div class="form-grid">
+
+                    <div class="form-field">
+                        <label for="fullName">Full Name</label>
+
+                        <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+                    </div>
+
+
+                    <div class="form-field">
+                        <label for="phone">Phone Number</label>
+
+                        <input type="tel" id="phone" name="phone" placeholder="e.g. 071 234 5678" required>
+                    </div>
+
+
+                    <div class="form-field full-width">
+                        <label for="email">Email Address</label>
+
+                        <input type="email" id="email" name="email" placeholder="Enter your email address">
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- BIKE DETAILS -->
+            <div class="form-group-section">
+
+                <div class="form-section-title">
+                    <span>02</span>
+
+                    <div>
+                        <h3>Bike Details</h3>
+                        <p>Tell us about the bike you're bringing in.</p>
+                    </div>
+                </div>
+
+                <div class="form-grid">
+
+                    <div class="form-field">
+                        <label for="bikeMake">Bike Make</label>
+
+                        <input type="text" id="bikeMake" name="bikeMake" placeholder="e.g. Honda" required>
+                    </div>
+
+
+                    <div class="form-field">
+                        <label for="bikeModel">Bike Model</label>
+
+                        <input type="text" id="bikeModel" name="bikeModel" placeholder="e.g. CB125F" required>
+                    </div>
+
+
+                    <div class="form-field">
+                        <label for="bikeYear">Year</label>
+
+                        <input type="number" id="bikeYear" name="bikeYear" placeholder="e.g. 2023" min="1900"
+                            max="2099">
+                    </div>
+
+
+                    <div class="form-field">
+                        <label for="registration">Registration Number</label>
+
+                        <input type="text" id="registration" name="registration" placeholder="e.g. CA 123-456">
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- SERVICE DETAILS -->
+            <div class="form-group-section">
+
+                <div class="form-section-title">
+                    <span>03</span>
+
+                    <div>
+                        <h3>Service Details</h3>
+                        <p>What does your bike need?</p>
+                    </div>
+                </div>
+
+                <div class="form-grid">
+
+                    <div class="form-field full-width">
+
+                        <label for="service">
+                            Select Service
+                        </label>
+
+                        <select id="service" name="service" required>
+
+                            <option value="">
+                                Select a service
+                            </option>
+
+                            <option value="full-service">
+                                Full Motorcycle Service
+                            </option>
+
+                            <option value="oil-change">
+                                Oil Change
+                            </option>
+
+                            <option value="brake-repair">
+                                Brake Repairs
+                            </option>
+
+                            <option value="battery-service">
+                                Battery Services
+                            </option>
+
+                            <option value="chain-sprocket">
+                                Chain & Sprocket
+                            </option>
+
+                            <option value="tyre-service">
+                                Tyre Service
+                            </option>
+
+                            <option value="electrical">
+                                Electrical Repairs
+                            </option>
+
+                            <option value="other">
+                                Other / Not Sure
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-field">
+
+                        <label for="preferredDate">
+                            Preferred Date
+                        </label>
+
+                        <input type="date" id="preferredDate" name="preferredDate" required>
+
+                    </div>
+
+
+                    <div class="form-field">
+
+                        <label for="preferredTime">
+                            Preferred Time
+                        </label>
+
+                        <select id="preferredTime" name="preferredTime" required>
+
+                            <option value="">
+                                Select a time
+                            </option>
+
+                            <option value="08:00">08:00</option>
+                            <option value="09:00">09:00</option>
+                            <option value="10:00">10:00</option>
+                            <option value="11:00">11:00</option>
+                            <option value="12:00">12:00</option>
+                            <option value="13:00">13:00</option>
+                            <option value="14:00">14:00</option>
+                            <option value="15:00">15:00</option>
+                            <option value="16:00">16:00</option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ADDITIONAL INFORMATION -->
+            <div class="form-group-section">
+
+                <div class="form-section-title">
+                    <span>04</span>
+
+                    <div>
+                        <h3>Additional Information</h3>
+                        <p>Tell us anything else we should know.</p>
+                    </div>
+                </div>
+
+                <div class="form-field">
+
+                    <label for="message">
+                        Describe the Problem or Service Needed
+                    </label>
+
+                    <textarea id="message" name="message" rows="6"
+                        placeholder="Tell us about any problems you're experiencing with your bike..."></textarea>
+
+                </div>
+
+            </div>
+
+
+            <!-- SUBMIT -->
+            <div class="booking-submit">
+
+                <p>
+                    <i class="fa-solid fa-circle-info"></i>
+
+                    Your booking is not confirmed until we contact you.
+                </p>
+
+                <button type="submit" class="booking-submit-button">
+
+                    Request Booking
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </button>
+
+            </div>
+
+        </form>
+
+    </section>
+
+
     <footer class="site-footer">
 
         <div class="footer-container">
@@ -568,4 +518,5 @@
 
 
 </body>
+
 </html>

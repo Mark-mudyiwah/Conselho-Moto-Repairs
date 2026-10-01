@@ -1,0 +1,421 @@
+h2 span{
+    color: #b90000;
+}
+
+.assistance-hero {
+    min-height: 440px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 70px 5%;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.72),
+            rgba(0, 0, 0, 0.72)
+        ),
+        url("../images/services/roadside-assistance.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.assistance-hero-content {
+    max-width: 900px;
+
+    text-align: center;
+
+    color: white;
+}
+
+.assistance-label {
+    display: inline-block;
+
+    margin-bottom: 15px;
+
+    color: #e10600;
+
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.assistance-hero h1 {
+    margin: 0;
+
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    line-height: 1.05;
+}
+
+.assistance-hero h1 span {
+    color: #e10600;
+}
+
+.assistance-hero p {
+    max-width: 680px;
+
+    margin: 25px auto 35px;
+
+    color: #e5e5e5;
+
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+
+/* HERO INFO */
+
+.assistance-hero-info {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 30px;
+}
+
+.assistance-info-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.assistance-info-item i {
+    color: #e10600;
+    font-size: 18px;
+}
+
+
+/* FORM SECTION */
+
+.assistance-form-section {
+    padding: 80px 5%;
+
+    background: #f7f7f7;
+}
+
+.assistance-form-header {
+    max-width: 700px;
+
+    margin: 0 auto 50px;
+
+    text-align: center;
+}
+
+.assistance-form-header h2 {
+    margin: 0 0 15px;
+
+    font-size: clamp(2rem, 4vw, 3rem);
+
+    color: #111;
+}
+
+.assistance-form-header p {
+    margin: 0;
+
+    color: #666;
+
+    line-height: 1.7;
+}
+
+
+/* FORM */
+
+.assistance-form {
+    max-width: 950px;
+
+    margin: 0 auto;
+
+    padding: 45px;
+
+    background: #fff;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 10px 35px rgba(0, 0, 0, 0.08);
+}
+
+
+/* GROUP */
+
+.assistance-group {
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+
+    border-bottom: 1px solid #e5e5e5;
+}
+
+
+/* SECTION TITLE */
+
+.assistance-section-title {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 15px;
+
+    margin-bottom: 30px;
+}
+
+.assistance-section-title > span {
+    width: 38px;
+    height: 38px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #b90000;
+    color: white;
+
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+.assistance-section-title h3 {
+    margin: 0 0 4px;
+
+    color: #111;
+
+    font-size: 1.25rem;
+}
+
+.assistance-section-title p {
+    margin: 0;
+
+    color: #777;
+
+    font-size: 0.9rem;
+}
+
+
+/* FORM GRID */
+
+.assistance-form .form-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 22px;
+}
+
+.assistance-form .form-field {
+    display: flex;
+    flex-direction: column;
+
+    gap: 8px;
+}
+
+.assistance-form .full-width {
+    grid-column: 1 / -1;
+}
+
+
+/* INPUTS */
+
+.assistance-form label {
+    color: #222;
+
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.assistance-form input,
+.assistance-form select,
+.assistance-form textarea {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 14px 15px;
+
+    border: 1px solid #ddd;
+    border-radius: 5px;
+
+    background: white;
+
+    color: #222;
+
+    font-family: inherit;
+    font-size: 0.95rem;
+
+    outline: none;
+
+    transition: 0.2s ease;
+}
+
+.assistance-form textarea {
+    resize: vertical;
+
+    min-height: 140px;
+}
+
+.assistance-form input:focus,
+.assistance-form select:focus,
+.assistance-form textarea:focus {
+    border-color: #e10600;
+
+    box-shadow:
+        0 0 0 3px rgba(225, 6, 0, 0.08);
+}
+
+.assistance-form input::placeholder,
+.assistance-form textarea::placeholder {
+    color: #aaa;
+}
+
+
+/* SUBMIT */
+
+.assistance-submit {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 25px;
+}
+
+.assistance-notice {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 10px;
+
+    max-width: 500px;
+}
+
+.assistance-notice i {
+    margin-top: 3px;
+
+    color: #e10600;
+}
+
+.assistance-notice p {
+    margin: 0;
+
+    color: #777;
+
+    font-size: 0.85rem;
+    line-height: 1.5;
+}
+
+.assistance-submit-button {
+    display: inline-flex;
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 15px 25px;
+
+    border: none;
+    border-radius: 5px;
+
+    background: #e10600;
+    color: white;
+
+    font-family: inherit;
+
+    font-size: 0.95rem;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+.assistance-submit-button:hover {
+    background: #b90000;
+
+    transform: translateY(-2px);
+}
+
+.assistance-submit-button i {
+    transition: 0.3s ease;
+}
+
+.assistance-submit-button:hover i {
+    transform: translateX(4px);
+}
+
+
+/* TABLET */
+
+@media (max-width: 700px) {
+
+    .assistance-hero {
+        min-height: 450px;
+
+        padding: 60px 20px;
+    }
+
+    .assistance-hero h1 {
+        font-size: 2.7rem;
+    }
+
+    .assistance-hero-info {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        width: fit-content;
+
+        margin: 0 auto;
+
+        gap: 15px;
+    }
+
+    .assistance-form-section {
+        padding: 60px 20px;
+    }
+
+    .assistance-form {
+        padding: 30px 25px;
+    }
+
+    .assistance-form .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .assistance-form .full-width {
+        grid-column: auto;
+    }
+
+    .assistance-submit {
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+    .assistance-submit-button {
+        justify-content: center;
+    }
+
+}
+
+
+/* SMALL MOBILE */
+
+@media (max-width: 450px) {
+
+    .assistance-form {
+        padding: 25px 18px;
+    }
+
+    .assistance-section-title {
+        gap: 10px;
+    }
+
+    .assistance-section-title h3 {
+        font-size: 1.1rem;
+    }
+
+}

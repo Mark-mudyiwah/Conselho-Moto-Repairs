@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Road Assistance</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="./styles/shared/header.css">
+      <link rel="stylesheet" href="./styles/shared/footer.css">
+    <link rel="stylesheet" href="./road-assistance.css">
+</head>
+
+<body>
+    <header class="site-header">
+
+        <div class="header-container">
+
+            <!-- Logo -->
+            <a href="index.html" class="logo">
+
+                <span class="logo-icon">
+                    <i class="fa-solid fa-motorcycle"></i>
+                </span>
+
+                <span class="company-name">
+                    CONSELHO
+                    <small>GROUP</small>
+                </span>
+
+            </a>
+
+
+            <!-- Desktop Navigation -->
+            <nav class="main-nav">
+
+                <a href="index.html">Home</a>
+
+                <a href="services.html">Services</a>
+
+                <a href="book-a-service.html"  class="active">Booking</a>
+
+                <a href="about.html">About</a>
+
+                <a href="contact.html">Contact</a>
+
+            </nav>
+
+
+            <!-- Header Action -->
+            <a href="road-assistance.html" class="book-btn">
+                <i class="fa-regular fa-calendar"></i>
+                Request Assistance
+            </a>
+
+
+            <!-- Mobile Menu Button -->
+            <label for="menu-toggle" class="menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+
+        </div>
+
+
+        <!-- Mobile Navigation -->
+        <input type="checkbox" id="menu-toggle">
+
+        <nav class="mobile-nav">
+
+            <a href="index.html">
+                <i class="fa-solid fa-house"></i>
+                Home
+            </a>
+
+            <a href="services.html">
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+                Services
+            </a>
+
+            <a href="book-a-service.html">
+                <i class="fa-solid fa-book"></i>
+                Booking
+            </a>
+
+            <a href="about.html">
+                <i class="fa-solid fa-circle-info"></i>
+                About
+            </a>
+
+            <a href="contact.html">
+                <i class="fa-solid fa-phone"></i>
+                Contact
+            </a>
+
+            <a href="road-assistance.html" class="mobile-book-btn">
+                <i class="fa-regular fa-calendar"></i>
+                Request Assistance
+            </a>
+
+        </nav>
+
+    </header>
+
+<section class="assistance-hero">
+
+    <div class="assistance-hero-content">
+
+        <span class="assistance-label">
+            NEED HELP?
+        </span>
+
+        <h1>
+            We're Here When
+            <span>You Need Us</span>
+        </h1>
+
+        <p>
+            Stuck on the road or your bike won't start at home?
+            Tell us what's happening and where you are, and we'll
+            get in touch to assist you.
+        </p>
+
+        <div class="assistance-hero-info">
+
+            <div class="assistance-info-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Roadside Assistance</span>
+            </div>
+
+            <div class="assistance-info-item">
+                <i class="fa-solid fa-house"></i>
+                <span>Home Call-Outs</span>
+            </div>
+
+            <div class="assistance-info-item">
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+                <span>On-Site Repairs</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     ASSISTANCE FORM
+========================= -->
+
+<section class="assistance-form-section">
+
+    <div class="assistance-form-header">
+
+        <span class="section-label">
+            REQUEST ASSISTANCE
+        </span>
+
+        <h2>
+            Tell Us <span>What Happened</span>
+        </h2>
+
+        <p>
+            Give us a few details about your bike and your location
+            so we can understand how to help.
+        </p>
+
+    </div>
+
+
+    <form class="assistance-form" id="assistanceForm">
+
+
+        <!-- CUSTOMER DETAILS -->
+
+        <div class="assistance-group">
+
+            <div class="assistance-section-title">
+
+                <span>01</span>
+
+                <div>
+                    <h3>Your Details</h3>
+                    <p>How can we contact you?</p>
+                </div>
+
+            </div>
+
+
+            <div class="form-grid">
+
+                <div class="form-field">
+
+                    <label for="assistanceName">
+                        Full Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="assistanceName"
+                        name="name"
+                        placeholder="Enter your full name"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-field">
+
+                    <label for="assistancePhone">
+                        Phone Number
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="assistancePhone"
+                        name="phone"
+                        placeholder="e.g. 071 234 5678"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-field full-width">
+
+                    <label for="assistanceEmail">
+                        Email Address
+                    </label>
+
+                    <input
+                        type="email"
+                        id="assistanceEmail"
+                        name="email"
+                        placeholder="Enter your email address"
+                    >
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- BIKE DETAILS -->
+
+        <div class="assistance-group">
+
+            <div class="assistance-section-title">
+
+                <span>02</span>
+
+                <div>
+                    <h3>Bike Details</h3>
+                    <p>Tell us about the bike that needs help.</p>
+                </div>
+
+            </div>
+
+
+            <div class="form-grid">
+
+                <div class="form-field">
+
+                    <label for="assistanceBikeMake">
+                        Bike Make
+                    </label>
+
+                    <input
+                        type="text"
+                        id="assistanceBikeMake"
+                        name="bikeMake"
+                        placeholder="e.g. Honda"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-field">
+
+                    <label for="assistanceBikeModel">
+                        Bike Model
+                    </label>
+
+                    <input
+                        type="text"
+                        id="assistanceBikeModel"
+                        name="bikeModel"
+                        placeholder="e.g. CB125F"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-field">
+
+                    <label for="assistanceRegistration">
+                        Registration Number
+                    </label>
+
+                    <input
+                        type="text"
+                        id="assistanceRegistration"
+                        name="registration"
+                        placeholder="e.g. CA 123-456"
+                    >
+
+                </div>
+
+
+                <div class="form-field">
+
+                    <label for="assistanceProblem">
+                        What's Wrong?
+                    </label>
+
+                    <select
+                        id="assistanceProblem"
+                        name="problem"
+                        required
+                    >
+
+                        <option value="">
+                            Select a problem
+                        </option>
+
+                        <option value="wont-start">
+                            Bike Won't Start
+                        </option>
+
+                        <option value="breakdown">
+                            Bike Broke Down
+                        </option>
+
+                        <option value="flat-tyre">
+                            Flat Tyre
+                        </option>
+
+                        <option value="battery">
+                            Battery Problem
+                        </option>
+
+                        <option value="electrical">
+                            Electrical Problem
+                        </option>
+
+                        <option value="engine">
+                            Engine Problem
+                        </option>
+
+                        <option value="other">
+                            Other Problem
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- LOCATION -->
+
+        <div class="assistance-group">
+
+            <div class="assistance-section-title">
+
+                <span>03</span>
+
+                <div>
+                    <h3>Your Location</h3>
+                    <p>Where is the bike currently located?</p>
+                </div>
+
+            </div>
+
+
+            <div class="form-grid">
+
+                <div class="form-field full-width">
+
+                    <label for="assistanceLocation">
+                        Location / Address
+                    </label>
+
+                    <input
+                        type="text"
+                        id="assistanceLocation"
+                        name="location"
+                        placeholder="Enter your current location"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-field">
+
+                    <label for="area">
+                        Area / Suburb
+                    </label>
+
+                    <input
+                        type="text"
+                        id="area"
+                        name="area"
+                        placeholder="e.g. Bellville"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-field">
+
+                    <label for="assistanceType">
+                        Assistance Type
+                    </label>
+
+                    <select
+                        id="assistanceType"
+                        name="assistanceType"
+                        required
+                    >
+
+                        <option value="">
+                            Select assistance type
+                        </option>
+
+                        <option value="roadside">
+                            Roadside Assistance
+                        </option>
+
+                        <option value="home-callout">
+                            Home Call-Out
+                        </option>
+
+                        <option value="on-site">
+                            On-Site Repair
+                        </option>
+
+                        <option value="transport">
+                            Bike Transport / Recovery
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- DESCRIPTION -->
+
+        <div class="assistance-group">
+
+            <div class="assistance-section-title">
+
+                <span>04</span>
+
+                <div>
+                    <h3>Tell Us More</h3>
+                    <p>Give us more information about the problem.</p>
+                </div>
+
+            </div>
+
+
+            <div class="form-field">
+
+                <label for="assistanceMessage">
+                    Describe What Happened
+                </label>
+
+                <textarea
+                    id="assistanceMessage"
+                    name="message"
+                    rows="6"
+                    placeholder="For example: The bike was running normally and then suddenly stopped. It now starts but cuts out..."
+                ></textarea>
+
+            </div>
+
+        </div>
+
+
+        <!-- SUBMIT -->
+
+        <div class="assistance-submit">
+
+            <div class="assistance-notice">
+
+                <i class="fa-solid fa-circle-info"></i>
+
+                <p>
+                    After submitting your request, we'll contact you
+                    to discuss the situation and confirm assistance.
+                </p>
+
+            </div>
+
+
+            <button
+                type="submit"
+                class="assistance-submit-button"
+            >
+
+                Request Assistance
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </button>
+
+        </div>
+
+    </form>
+
+</section>
+
+
+    
+    <footer class="site-footer">
+
+        <div class="footer-container">
+
+            <!-- Brand -->
+            <div class="footer-brand">
+
+                <a href="#" class="footer-logo">
+                    <span>CONSELHO</span>GRUPO
+                </a>
+
+                <p>
+                    Reliable motorcycle repairs, servicing and roadside
+                    assistance to keep you safely on the road.
+                </p>
+
+                <div class="footer-socials">
+
+                    <a href="#" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#" aria-label="WhatsApp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Quick Links -->
+            <div class="footer-column">
+
+                <h3>Quick Links</h3>
+
+                <a href="#">Home</a>
+                <a href="#">Services</a>
+                <a href="#">About Us</a>
+                <a href="#">Contact</a>
+
+            </div>
+
+
+            <!-- Services -->
+            <div class="footer-column">
+
+                <h3>Services</h3>
+
+                <a href="#">Bike Servicing</a>
+                <a href="#">Brake Repairs</a>
+                <a href="#">Chain & Sprocket</a>
+                <a href="#">Battery Services</a>
+                <a href="#">Roadside Assistance</a>
+
+            </div>
+
+
+            <!-- Contact -->
+            <div class="footer-column footer-contact">
+
+                <h3>Get In Touch</h3>
+
+                <a href="tel:27691736131">
+                    <i class="fa-solid fa-phone"></i>
+                    27691736131
+                </a>
+
+                <a href="https://wa.me/27691736131">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    WhatsApp Us
+                </a>
+
+                <a href="#">
+                    <i class="fa-solid fa-envelope"></i>
+                    info@bikefix.co.za
+                </a>
+
+                <a href="#">
+                    <i class="fa-solid fa-location-dot"></i>
+                    Cape Town, South Africa
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- Bottom -->
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 BikeFix. All rights reserved.
+            </p>
+
+            <div class="footer-bottom-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+
+</body>
+</html>
