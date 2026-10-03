@@ -1,0 +1,944 @@
+
+/* =====================================================
+   SERVICE PAGE
+===================================================== */
+
+:root {
+    --primary: #e31b23;
+    --primary-dark: #b9141b;
+    --dark: #111111;
+    --dark-light: #1b1b1b;
+    --text: #333;
+    --muted: #777;
+    --light: #f7f7f7;
+    --white: #fff;
+    --border: #e5e5e5;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text);
+    background: #fff;
+}
+
+
+.container {
+    width: min(1150px, 92%);
+    margin: auto;
+}
+
+
+.section {
+    padding: 90px 0;
+}
+
+/* =====================================================
+   BUTTONS
+===================================================== */
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    padding: 14px 23px;
+
+    text-decoration: none;
+    font-weight: 700;
+
+    border-radius: 5px;
+
+    transition: 0.3s ease;
+}
+
+
+.btn-primary {
+    background: var(--primary);
+    color: #fff;
+}
+
+
+.btn-primary:hover {
+    background: var(--primary-dark);
+    transform: translateY(-2px);
+}
+
+
+.btn-secondary {
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+
+.btn-secondary:hover {
+    background: #fff;
+    color: var(--dark);
+}
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.service-hero {
+    min-height: 620px;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    background:
+        url("../../images/services/oil.jpg")
+        center / contain no-repeat;
+}
+
+
+.service-hero-overlay {
+    position: absolute;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.68);
+}
+
+
+.service-hero-content {
+    position: relative;
+    z-index: 2;
+
+    color: #fff;
+    max-width: 800px;
+}
+
+
+.breadcrumb {
+    display: block;
+
+    margin-bottom: 30px;
+
+    font-size: 14px;
+
+    color: #ddd;
+}
+
+
+.service-label,
+.section-label {
+    display: inline-block;
+
+    color: var(--primary);
+
+    text-transform: uppercase;
+
+    font-size: 13px;
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+
+    margin-bottom: 12px;
+}
+
+
+.service-label i {
+    margin-right: 7px;
+}
+
+
+.service-hero h1 {
+    font-size: clamp(45px, 7vw, 75px);
+    line-height: 1.05;
+
+    margin: 0 0 25px;
+}
+
+
+.service-hero h1 span {
+    color: var(--primary);
+}
+
+
+.service-hero p {
+    max-width: 700px;
+
+    font-size: 19px;
+    line-height: 1.7;
+
+    color: #eee;
+
+    margin-bottom: 35px;
+}
+
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+
+/* =====================================================
+   HEADINGS
+===================================================== */
+
+.section-heading {
+    max-width: 700px;
+
+    margin: 0 auto 50px;
+
+    text-align: center;
+}
+
+
+.section-heading h2,
+.service-intro h2,
+.importance-content h2,
+.price-content h2 {
+    margin: 0 0 20px;
+
+    color: var(--dark);
+
+    font-size: clamp(32px, 5vw, 48px);
+
+    line-height: 1.15;
+}
+
+
+.section-heading h2 span,
+.service-intro h2 span,
+.importance-content h2 span,
+.price-content h2 span {
+    color: var(--primary);
+}
+
+
+.section-heading p {
+    color: var(--muted);
+
+    line-height: 1.7;
+
+    font-size: 17px;
+}
+
+
+/* =====================================================
+   INTRO
+===================================================== */
+
+.service-intro-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 70px;
+
+    align-items: center;
+}
+
+
+.service-image-wrapper {
+    position: relative;
+}
+
+
+.service-image-wrapper img {
+    display: block;
+
+    width: 100%;
+    height: 500px;
+
+    object-fit: cover;
+
+    border-radius: 8px;
+}
+
+
+.price-badge {
+    position: absolute;
+
+    right: 25px;
+    bottom: 25px;
+
+    background: var(--primary);
+
+    color: #fff;
+
+    padding: 18px 25px;
+
+    border-radius: 6px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+
+    text-align: center;
+}
+
+
+.price-badge span {
+    display: block;
+
+    font-size: 12px;
+
+    margin-bottom: 4px;
+}
+
+
+.price-badge strong {
+    font-size: 28px;
+}
+
+
+.service-intro-content p,
+.importance-content p {
+    line-height: 1.8;
+
+    color: var(--muted);
+
+    margin-bottom: 18px;
+}
+
+
+.text-link {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    margin-top: 10px;
+
+    color: var(--primary);
+
+    text-decoration: none;
+
+    font-weight: 700;
+}
+
+
+/* =====================================================
+   INCLUDED
+===================================================== */
+
+.included-section {
+    background: var(--light);
+}
+
+
+.included-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+
+.included-card {
+    background: #fff;
+
+    padding: 30px 25px;
+
+    border: 1px solid var(--border);
+
+    border-radius: 8px;
+
+    transition: 0.3s ease;
+}
+
+
+.included-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+
+.included-icon {
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #fff0f1;
+
+    color: var(--primary);
+
+    border-radius: 50%;
+
+    font-size: 21px;
+
+    margin-bottom: 20px;
+}
+
+
+.included-card h3 {
+    margin-bottom: 12px;
+
+    color: var(--dark);
+}
+
+
+.included-card p {
+    color: var(--muted);
+
+    line-height: 1.6;
+
+    font-size: 15px;
+}
+
+
+/* =====================================================
+   IMPORTANCE
+===================================================== */
+
+.importance-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 70px;
+
+    align-items: center;
+}
+
+
+.importance-image img {
+    width: 100%;
+
+    height: 500px;
+
+    object-fit: cover;
+
+    border-radius: 8px;
+}
+
+
+.benefits-list {
+    list-style: none;
+
+    padding: 0;
+
+    margin: 30px 0 0;
+}
+
+
+.benefits-list li {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-bottom: 15px;
+
+    font-weight: 600;
+
+    color: var(--dark);
+}
+
+
+.benefits-list i {
+    color: var(--primary);
+}
+
+
+/* =====================================================
+   SIGNS
+===================================================== */
+
+.signs-section {
+    background: var(--light);
+}
+
+
+.signs-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+
+.sign-card {
+    background: #fff;
+
+    padding: 30px 25px;
+
+    border-radius: 8px;
+
+    border: 1px solid var(--border);
+
+    text-align: center;
+}
+
+
+.sign-card > i {
+    font-size: 32px;
+
+    color: var(--primary);
+
+    margin-bottom: 20px;
+}
+
+
+.sign-card h3 {
+    color: var(--dark);
+
+    margin-bottom: 12px;
+}
+
+
+.sign-card p {
+    color: var(--muted);
+
+    line-height: 1.6;
+
+    font-size: 15px;
+}
+
+
+/* =====================================================
+   PROCESS
+===================================================== */
+
+.process-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+}
+
+
+.process-step {
+    position: relative;
+
+    padding: 30px;
+
+    border: 1px solid var(--border);
+
+    border-radius: 8px;
+
+    text-align: center;
+}
+
+
+.step-number {
+    position: absolute;
+
+    top: 15px;
+    right: 18px;
+
+    font-size: 13px;
+
+    font-weight: 800;
+
+    color: #ccc;
+}
+
+
+.process-step > i {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 60px;
+    height: 60px;
+
+    margin: 10px auto 20px;
+
+    background: var(--dark);
+
+    color: #fff;
+
+    border-radius: 50%;
+}
+
+
+.process-step h3 {
+    color: var(--dark);
+}
+
+
+.process-step p {
+    color: var(--muted);
+
+    line-height: 1.6;
+
+    font-size: 15px;
+}
+
+
+/* =====================================================
+   PRICE
+===================================================== */
+
+.service-price-section {
+    background: var(--light);
+}
+
+
+.price-card {
+    display: grid;
+
+    grid-template-columns: 1fr auto auto;
+
+    align-items: center;
+
+    gap: 50px;
+
+    background: var(--dark);
+
+    padding: 50px;
+
+    border-radius: 10px;
+
+    color: #fff;
+}
+
+
+.price-content h2 {
+    color: #fff;
+}
+
+
+.price-content p {
+    color: #bbb;
+
+    line-height: 1.7;
+
+    max-width: 600px;
+}
+
+
+.price {
+    text-align: center;
+
+    min-width: 160px;
+}
+
+
+.price span {
+    display: block;
+
+    color: #aaa;
+
+    font-size: 14px;
+}
+
+
+.price strong {
+    display: block;
+
+    font-size: 42px;
+
+    color: var(--primary);
+
+    margin: 5px 0;
+}
+
+
+.price small {
+    display: block;
+
+    color: #aaa;
+
+    line-height: 1.4;
+}
+
+
+/* =====================================================
+   FINAL CTA
+===================================================== */
+
+.final-cta {
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.82),
+            rgba(0, 0, 0, 0.82)
+        ),
+        url("../images/services/oil-filter-change.jpg")
+        center / cover no-repeat;
+
+    padding: 110px 0;
+
+    text-align: center;
+
+    color: #fff;
+}
+
+
+.final-cta h2 {
+    font-size: clamp(38px, 6vw, 60px);
+
+    margin: 0 0 20px;
+}
+
+
+.final-cta h2 span {
+    color: var(--primary);
+}
+
+
+.final-cta p {
+    max-width: 600px;
+
+    margin: 0 auto 30px;
+
+    color: #ddd;
+
+    line-height: 1.7;
+}
+
+
+.cta-buttons {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+.site-footer {
+    background: #0b0b0b;
+
+    color: #aaa;
+
+    padding-top: 70px;
+}
+
+
+.footer-grid {
+    display: grid;
+
+    grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
+
+    gap: 50px;
+
+    padding-bottom: 50px;
+}
+
+
+.footer-about p {
+    max-width: 300px;
+
+    line-height: 1.7;
+}
+
+
+.site-footer h3 {
+    color: #fff;
+
+    margin-bottom: 20px;
+}
+
+
+.footer-links {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+
+.footer-links a {
+    color: #aaa;
+
+    text-decoration: none;
+}
+
+
+.footer-links a:hover {
+    color: var(--primary);
+}
+
+
+.footer-contact p {
+    display: flex;
+
+    gap: 10px;
+
+    align-items: center;
+}
+
+
+.footer-contact i {
+    color: var(--primary);
+}
+
+
+.social-links {
+    display: flex;
+
+    gap: 12px;
+
+    margin-top: 20px;
+}
+
+
+.social-links a {
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #333;
+
+    border-radius: 50%;
+
+    color: #fff;
+
+    text-decoration: none;
+}
+
+
+.social-links a:hover {
+    background: var(--primary);
+
+    border-color: var(--primary);
+}
+
+
+.footer-bottom {
+    border-top: 1px solid #222;
+
+    padding: 20px 0;
+
+    text-align: center;
+
+    font-size: 14px;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 900px) {
+
+    .navbar {
+        display: none;
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+
+    .service-intro-grid,
+    .importance-grid {
+        grid-template-columns: 1fr;
+
+        gap: 45px;
+    }
+
+
+    .included-grid,
+    .signs-grid,
+    .process-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .price-card {
+        grid-template-columns: 1fr;
+
+        text-align: center;
+
+        gap: 25px;
+    }
+
+
+    .price-content p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .section {
+        padding: 65px 0;
+    }
+
+
+    .service-hero {
+        min-height: 560px;
+    }
+
+
+    .service-hero h1 {
+        font-size: 45px;
+    }
+
+
+    .service-hero p {
+        font-size: 16px;
+    }
+
+
+    .hero-buttons {
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+
+    .hero-buttons .btn {
+        width: 100%;
+    }
+
+
+    .service-image-wrapper img,
+    .importance-image img {
+        height: 350px;
+    }
+
+
+    .included-grid,
+    .signs-grid,
+    .process-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .price-card {
+        padding: 35px 25px;
+    }
+
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+}
