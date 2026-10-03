@@ -7,7 +7,7 @@ const services = [
         description: "Keep your engine running smoothly with routine inspections, oil changes and essential maintenance.",
         price: " R900",
         icon: "fa-solid fa-gears",
-        link: "services/engine-servicing.html"
+        link: "services/engen-service.html"
     },
 
     {
@@ -17,7 +17,7 @@ const services = [
         description: "Fresh engine oil and a new filter help protect your engine and maintain smooth performance.",
         price: " 100",
         icon: "fa-solid fa-oil-can",
-        link: "services/oil-filter-change.html"
+        link: "services/oil-change.html"
     },
 
     {
