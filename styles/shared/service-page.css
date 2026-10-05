@@ -97,7 +97,7 @@ body {
     align-items: center;
 
     background:
-        url("../../images/services/oil.jpg")
+        url("")
         center / contain no-repeat;
 }
 
@@ -118,7 +118,6 @@ body {
     max-width: 800px;
 }
 
-
 .breadcrumb {
     display: block;
 
@@ -126,8 +125,23 @@ body {
 
     font-size: 14px;
 
-    color: #ddd;
+    color: #000000;
 }
+
+
+.breadcrumb a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumb [aria-current="page"] {
+    font-weight: 600;
+}
+
 
 
 .service-label,

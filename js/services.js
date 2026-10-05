@@ -37,7 +37,7 @@ const services = [
         description: "Puncture repairs, tyre inspections and replacements to get you safely back on the road.",
         price: " R100",
         icon: "fa-solid fa-motorcycle",
-        link: "services/tyre-services.html"
+        link: "services/tyre&puncture-repairs.html"
     },
 
     {
@@ -57,7 +57,7 @@ const services = [
         description: "Diagnosis and repair of electrical problems including lights, wiring, switches and charging systems.",
         price: " R250",
         icon: "fa-solid fa-bolt",
-        link: "services/electrical-repairs.html"
+        link: "services/electricals&Ignition.html"
     },
 
     {
