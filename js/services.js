@@ -67,7 +67,7 @@ const services = [
         description: "Chain adjustment, cleaning and replacement of worn chains and sprockets for smooth power delivery.",
         price: " R200",
         icon: "fa-solid fa-link",
-        link: "services/chain-sprocket.html"
+        link: "services/chain&sprocket.html"
     },
 
     {
@@ -86,7 +86,7 @@ const services = [
         description: "Installation of sturdy rear carriers for motorcycles without one, making them ready for delivery boxes and everyday delivery work.",
         price: " R350",
         icon: "fa-solid fa-box",
-        link: "services/delivery-carrier.html"
+        link: "services/carrier-installation.html"
     },
 
     {
@@ -156,9 +156,9 @@ const servicesGrid = document.getElementById("servicesGrid");
 services.forEach(service => {
 
     servicesGrid.innerHTML += `
-        <article class="service-card">
+        <article class="service-card  included-card reveal">
 
-            <div class="service-image-container">
+            <div class="service-image-container reveal-left">
                 <img
                     src="${service.image}"
                     alt="${service.name}"
@@ -166,7 +166,7 @@ services.forEach(service => {
                 >
             </div>
 
-            <div class="service-content">
+            <div class="service-content  reveal">
 
                 <h3>${service.name}</h3>
 
