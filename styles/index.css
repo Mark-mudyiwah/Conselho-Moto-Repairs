@@ -1,4 +1,19 @@
+html {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
 
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text);
+    background: #fff;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
 
 
 
@@ -437,89 +452,84 @@
 .services-grid {
     width: 100%;
     max-width: 1200px;
-    margin: 50px auto 0;
+    margin: 0 auto;
 
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(280px, 1fr)
+    );
+
     gap: 25px;
+    margin-bottom: 30px;
 }
 
-
-/* =========================
-   SERVICE CARD
-========================= */
-
 .service-card {
-
-    border-radius: 12px;
     overflow: hidden;
 
-    display: flex;
-    flex-direction: column;
+    background: white;
+    border-radius: 8px;
 
-    box-shadow: 0 5px 20px rgba(11, 87, 84, 0.08);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
 
-    transition: transform 0.3s ease,
-        box-shadow 0.3s ease;
+    transition: 0.3s ease;
 }
 
 .service-card:hover {
-    transform: translateY(-7px);
-
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.14);
+    transform: translateY(-5px);
 }
 
-
-/* =========================
-   SERVICE IMAGE
-========================= */
+.service-image-container {
+    width: 100%;
+    height: 210px;
+    overflow: hidden;
+}
 
 .service-image {
     width: 100%;
-    height: 220px;
+    height: 100%;
+
+    display: block;
+
     object-fit: contain;
-    display: block;
-    border-radius: 30px;
-    padding-top: 10px;
-   
+
+    transition: 0.4s ease;
 }
 
-
-/* =========================
-   SERVICE NAME
-========================= */
-
-.service-name {
-    display: block;
-
-    padding: 22px 22px 8px;
-
-    font-size: 1.3rem;
-    font-weight: 700;
-
-    color: #222;
-    color: white;
+.service-card:hover .service-image {
+    transform: scale(1.04);
 }
 
+.service-content {
+    padding: 20px;
+}
 
-/* =========================
-   SERVICE DESCRIPTION
-========================= */
+.service-content h3 {
+    margin: 0 0 10px;
 
-.service-desc {
-    display: block;
+    font-size: 21px;
+}
 
-    padding: 0 22px;
+.service-description {
+    min-height: 75px;
 
-    min-height: 55px;
-
-    font-size: 0.95rem;
-    line-height: 1.6;
+    margin: 0 0 20px;
 
     color: #666;
+    font-size: 14px;
+    line-height: 1.6;
 }
 
-/*Service Price*/
+.service-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+
+    padding-top: 15px;
+
+    border-top: 1px solid #eee;
+}
 
 .service-price {
     display: inline-block;
@@ -532,86 +542,33 @@
 }
 
 .service-price b {
-    color: #28cdd6;
+    color: black;
     font-size: 0.80rem;
     margin-left: 3px;
     font-style: italic;
+    font-weight: 200;
 }
 
-
-/* =========================
-   LEARN MORE
-========================= */
-
 .service-link {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    gap: 6px;
 
-    margin: 15px 22px 22px;
-
-    width: fit-content;
-
-    font-size: 0.9rem;
+    color: red;
+    font-size: 14px;
     font-weight: 700;
-
-    color: #e63946;
-
-    cursor: pointer;
-
-    transition: color 0.2s ease;
+    text-decoration: none;
 }
 
 .service-link:hover {
-    color: #b71c2a;
+    text-decoration: underline;
 }
 
 
-/* =========================
-   TABLET
-========================= */
-
-@media (max-width: 900px) {
-
-    .services-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-}
-
-
-/* =========================
-   MOBILE
-========================= */
-
-@media (max-width: 600px) {
-
-    .services-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
-        margin-top: 35px;
-    }
-
-    .service-image {
-        height: 210px;
-        background: transparent;
-    }
-
-    .service-name {
-        font-size: 1.2rem;
-    }
-
-}
-
-.all-services-link {
-    display: flex;
-    justify-content: center;
+.all-services-link{
     text-decoration: none;
-    align-items: center;
-    font-size: 25px;
-    font-weight: 600;
-    color: #1c5ab7;
-    margin-top: 40px;
-
 }
+
 
 /* ================================
    WHY CHOOSE US

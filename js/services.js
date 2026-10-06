@@ -1,13 +1,15 @@
-const services = [
+export const services = [
 
     {
         id: "engine-servicing",
         name: "Engine Servicing",
         image: "images/services/engen.jfif",
         description: "Keep your engine running smoothly with routine inspections, oil changes and essential maintenance.",
+        featuredDescription: "Keep your bike running like new with professional engine servicing designed to catch problems before they become costly repairs.",
         price: " R900",
         icon: "fa-solid fa-gears",
-        link: "services/engen-service.html"
+        link: "services/engen-service.html",
+        featured: true
     },
 
     {
@@ -17,7 +19,8 @@ const services = [
         description: "Fresh engine oil and a new filter help protect your engine and maintain smooth performance.",
         price: " 100",
         icon: "fa-solid fa-oil-can",
-        link: "services/oil-change.html"
+        link: "services/oil-change.html",
+        featured: false
     },
 
     {
@@ -25,9 +28,11 @@ const services = [
         name: "Brake Repairs",
         image: "images/services/brake-hub-2.jpg",
         description: "Brake inspections, pad replacements and repairs to keep your motorcycle stopping safely.",
+        featuredDescription: "Don’t take chances with your brakes. Get reliable stopping power and ride with confidence.",
         price: " R250",
         icon: "fa-solid fa-circle-stop",
-        link: "services/brake-repairs.html"
+        link: "services/brake-repairs.html",
+        featured: true
     },
 
     {
@@ -37,7 +42,8 @@ const services = [
         description: "Puncture repairs, tyre inspections and replacements to get you safely back on the road.",
         price: " R100",
         icon: "fa-solid fa-motorcycle",
-        link: "services/tyre&puncture-repairs.html"
+        link: "services/tyre&puncture-repairs.html",
+        featured: false
     },
 
     {
@@ -47,7 +53,8 @@ const services = [
         description: "Battery testing, charging and replacement for motorcycles experiencing starting or power problems.",
         price: " R150",
         icon: "fa-solid fa-car-battery",
-        link: "services/battery-services.html"
+        link: "services/battery-services.html",
+        featured: false
     },
 
     {
@@ -57,7 +64,8 @@ const services = [
         description: "Diagnosis and repair of electrical problems including lights, wiring, switches and charging systems.",
         price: " R250",
         icon: "fa-solid fa-bolt",
-        link: "services/electricals&Ignition.html"
+        link: "services/electricals&Ignition.html",
+        featured: false
     },
 
     {
@@ -67,7 +75,8 @@ const services = [
         description: "Chain adjustment, cleaning and replacement of worn chains and sprockets for smooth power delivery.",
         price: " R200",
         icon: "fa-solid fa-link",
-        link: "services/chain&sprocket.html"
+        link: "services/chain&sprocket.html",
+        featured: false
     },
 
     {
@@ -77,16 +86,20 @@ const services = [
         description: "Clutch inspection, adjustment and replacement to improve gear changes and riding performance.",
         price: " R300",
         icon: "fa-solid fa-sliders",
-        link: "services/clutch-repairs.html"
+        link: "services/clutch-repairs.html",
+        featured: false
     },
+
     {
         id: "delivery-carrier",
         name: "Delivery Box Carrier Installation",
         image: "images/services/carrier.webp",
         description: "Installation of sturdy rear carriers for motorcycles without one, making them ready for delivery boxes and everyday delivery work.",
+        featuredDescription: "Turn your motorcycle into a delivery-ready machine with a strong, properly fitted carrier built for everyday work.",
         price: " R350",
         icon: "fa-solid fa-box",
-        link: "services/carrier-installation.html"
+        link: "services/carrier-installation.html",
+        featured: true
     },
 
     {
@@ -94,9 +107,11 @@ const services = [
         name: "Fuel System Service",
         image: "images/services/carburetor.webp",
         description: "Inspection and cleaning of fuel-system components to help restore reliable engine performance.",
+        featuredDescription: "Running rough, using too much fuel, or struggling to start? We’ll get your fuel system working properly again.",
         price: " R300",
         icon: "fa-solid fa-gas-pump",
-        link: "services/fuel-system.html"
+        link: "services/fuel-system.html",
+        featured: true
     },
 
     {
@@ -106,7 +121,8 @@ const services = [
         description: "Inspection and repair of suspension components to improve handling, comfort and road stability.",
         price: " R350",
         icon: "fa-solid fa-arrows-up-down",
-        link: "services/suspension.html"
+        link: "services/suspension.html",
+        featured: false
     },
 
     {
@@ -116,7 +132,8 @@ const services = [
         description: "Wheel inspections, alignment checks and repairs to help keep your motorcycle stable on the road.",
         price: " R200",
         icon: "fa-solid fa-circle",
-        link: "services/wheel-services.html"
+        link: "services/wheel-services.html",
+        featured: false
     },
 
     {
@@ -126,7 +143,8 @@ const services = [
         description: "Identify motorcycle problems through systematic inspection and diagnostic testing.",
         price: " R250",
         icon: "fa-solid fa-magnifying-glass",
-        link: "services/diagnostics.html"
+        link: "services/diagnostics.html",
+        featured: false
     },
 
     {
@@ -136,7 +154,8 @@ const services = [
         description: "General motorcycle repairs for mechanical problems, worn components and everyday riding issues.",
         price: " R200",
         icon: "fa-solid fa-wrench",
-        link: "services/general-repairs.html"
+        link: "services/general-repairs.html",
+        featured: false
     },
 
     {
@@ -146,19 +165,20 @@ const services = [
         description: "Need help where you are? Get roadside assistance when your motorcycle breaks down or won't start.",
         price: " R300",
         icon: "fa-solid fa-truck-pickup",
-        link: "services/roadside-assistance.html"
+        link: "services/roadside-assistance.html",
+        featured: false
     }
 
 ];
 
 const servicesGrid = document.getElementById("servicesGrid");
-
+servicesGrid ?
 services.forEach(service => {
 
     servicesGrid.innerHTML += `
         <article class="service-card  included-card reveal">
 
-            <div class="service-image-container reveal-left">
+            <div class="service-image-container reveal">
                 <img
                     src="${service.image}"
                     alt="${service.name}"
@@ -191,4 +211,4 @@ services.forEach(service => {
 
         </article>
     `;
-});
+}) : ``;
