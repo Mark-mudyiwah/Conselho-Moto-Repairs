@@ -3,14 +3,13 @@ import { services } from "./services.js";
 const featuredServices = services.filter(service => service.featured)
 
 console.log(featuredServices)
+let html = ``;
 
-let html = ``
-featuredServices.forEach((service)=>{
-   html +=`
+featuredServices.forEach((service) => {
+    html += `
+        <article class="service-card reveal">
 
-           <article class="service-card">
-
-            <div class="service-image-container ">
+            <div class="service-image-container">
                 <img
                     src="${service.image}"
                     alt="${service.name}"
@@ -19,7 +18,6 @@ featuredServices.forEach((service)=>{
             </div>
 
             <div class="service-content">
-
                 <h3>${service.name}</h3>
 
                 <p class="service-description">
@@ -29,7 +27,7 @@ featuredServices.forEach((service)=>{
                 <div class="service-bottom">
 
                     <span class="service-price">
-                     from  <b>${service.price}</b>
+                        from <b>${service.price}</b>
                     </span>
 
                     <a href="${service.link}" class="service-link">
@@ -38,14 +36,41 @@ featuredServices.forEach((service)=>{
                     </a>
 
                 </div>
-
             </div>
 
         </article>
+    `;
+});
+
+// INSERT THE CARDS FIRST
+document.querySelector(".services-grid").innerHTML = html;
 
 
-`
+// THEN find the reveal elements
+const revealElements = document.querySelectorAll(
+    ".reveal, .reveal-left, .reveal-right"
+);
 
-})
 
-document.querySelector('.js-featured-container').innerHTML = html
+// THEN observe them
+const observer = new IntersectionObserver(
+    (entries) => {
+
+        entries.forEach((entry) => {
+
+            if (entry.isIntersecting) {
+                entry.target.classList.add("show");
+            }
+
+        });
+
+    },
+    {
+        threshold: 0.15
+    }
+);
+
+
+revealElements.forEach((element) => {
+    observer.observe(element);
+});
