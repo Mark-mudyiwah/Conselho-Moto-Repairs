@@ -2,6 +2,34 @@ import { services } from "./services.js";
 
 const featuredServices = services.filter(service => service.featured)
 
+
+const track = document.querySelector(".hero-image-track");
+const dots = document.querySelectorAll(".hero-dots .dot");
+
+let currentIndex = 0;
+
+function changeHeroImage() {
+
+    currentIndex++;
+
+    if (currentIndex >= 3) {
+        currentIndex = 0;
+    }
+
+    track.style.transform = `translateX(-${currentIndex * 33.333}%)`;
+
+    dots.forEach(dot => {
+        dot.classList.remove("active");
+    });
+
+    dots[currentIndex].classList.add("active");
+}
+
+setInterval(changeHeroImage, 5000);
+
+
+
+
 console.log(featuredServices)
 let html = ``;
 

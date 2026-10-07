@@ -3,7 +3,7 @@ export const services = [
     {
         id: "engine-servicing",
         name: "Engine Servicing",
-        image: "images/services/engen.jfif",
+        image: "images/services/engen-service.png",
         description: "Keep your engine running smoothly with routine inspections, oil changes and essential maintenance.",
         featuredDescription: "Keep your bike running like new with professional engine servicing designed to catch problems before they become costly repairs.",
         price: " R900",
