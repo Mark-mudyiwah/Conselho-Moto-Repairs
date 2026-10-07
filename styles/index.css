@@ -584,6 +584,109 @@ body {
 }
 
 
+
+/* ================================
+   BIKE TYPES
+================================ */
+
+.bike-types {
+    padding: 45px 0;
+    overflow: hidden;
+    background: #f8f8f8;
+}
+
+.bike-types-heading {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.bike-types-heading span {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #e21b23;
+}
+
+.bike-types-heading h2 {
+    margin-top: 6px;
+    font-size: 24px;
+}
+
+
+/* ================================
+   SLIDER
+================================ */
+
+.bike-slider {
+    overflow: hidden;
+}
+
+.bike-track {
+    display: flex;
+    width: max-content;
+    gap: 25px;
+    margin-bottom: 15px;
+}
+
+.bike-track-one {
+    animation: bikeSlideLeft 25s linear infinite;
+}
+
+.bike-track-two {
+    animation: bikeSlideRight 25s linear infinite;
+}
+
+
+/* ================================
+   BIKE LOGO
+================================ */
+
+.bike-item {
+    width: 100px;
+    height: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: white;
+    border-radius: 8px;
+
+    flex-shrink: 0;
+}
+
+.bike-item img {
+    max-width: 70px;
+    max-height: 35px;
+    object-fit: contain;
+}
+
+
+/* ================================
+   ANIMATION
+================================ */
+
+@keyframes bikeSlideLeft {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes bikeSlideRight {
+    from {
+        transform: translateX(-50%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+
 /* ================================
    WHY CHOOSE US
 ================================ */
