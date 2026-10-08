@@ -1,6 +1,6 @@
 
 
-   /* const revealElements = document.querySelectorAll(
+   const revealElements = document.querySelectorAll(
         ".reveal, .reveal-left, .reveal-right"
     );
 
@@ -35,8 +35,7 @@
 
     });
 
-*/
-
+/* 
 const revealElements = document.querySelectorAll(
     ".reveal, .reveal-left, .reveal-right"
 );
@@ -64,3 +63,6 @@ const observer = new IntersectionObserver(
 revealElements.forEach((element) => {
     observer.observe(element);
 });
+
+
+*/
