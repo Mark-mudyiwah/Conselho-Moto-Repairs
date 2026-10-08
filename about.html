@@ -1,11 +1,770 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
+    <title>About Us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="./styles/shared/header.css">
+    <link rel="stylesheet" href="./styles/shared/footer.css">
+    <link rel="stylesheet" href="./styles/shared/service-page.css">
+    <link rel="stylesheet" href="./styles/about.css">
 </head>
+
 <body>
-    ...Page under development
+    <header class="site-header">
+
+        <div class="header-container">
+
+            <!-- Logo -->
+            <a href="index.html" class="logo">
+
+                <span class="logo-icon">
+                    <i class="fa-solid fa-motorcycle"></i>
+                </span>
+
+                <span class="company-name">
+                    CONSELHO
+                    <small>Moto Repairs</small>
+                </span>
+
+            </a>
+
+
+            <!-- Desktop Navigation -->
+            <nav class="main-nav">
+
+                <a href="index.html">Home</a>
+
+                <a href="services.html">Services</a>
+
+                <a href="book-a-service.html">Booking</a>
+
+                <a href="about.html" class="active">About</a>
+
+                <a href="contact.html">Contact</a>
+
+            </nav>
+
+
+            <!-- Header Action -->
+            <a href="road-assistance.html" class="book-btn">
+                <i class="fa-regular fa-calendar"></i>
+                Request Assistance
+            </a>
+
+
+            <!-- Mobile Menu Button -->
+            <label for="menu-toggle" class="menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+
+        </div>
+
+
+        <!-- Mobile Navigation -->
+        <input type="checkbox" id="menu-toggle">
+
+        <nav class="mobile-nav">
+
+            <a href="index.html">
+                <i class="fa-solid fa-house"></i>
+                Home
+            </a>
+
+            <a href="services.html">
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+                Services
+            </a>
+
+            <a href="book-a-service.html">
+                <i class="fa-solid fa-book"></i>
+                Booking
+            </a>
+
+            <a href="about.html">
+                <i class="fa-solid fa-circle-info"></i>
+                About
+            </a>
+
+            <a href="contact.html">
+                <i class="fa-solid fa-phone"></i>
+                Contact
+            </a>
+
+            <a href="road-assistance.html" class="mobile-book-btn">
+                <i class="fa-regular fa-calendar"></i>
+                Request Assistance
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- =========================
+         ABOUT HERO
+    ========================== -->
+        <section class="service-hero about-hero">
+
+            <div class="service-hero-overlay"></div>
+
+            <div class="container">
+
+                <div class="service-hero-content">
+
+                    <span class="service-eyebrow">
+                        About Conselho Moto Repairs
+                    </span>
+
+                    <h1>
+                        Built to Keep Your <span>Bike Moving</span>
+                    </h1>
+
+                    <p>
+                        Reliable motorcycle repairs, servicing and support
+                        for riders who depend on their bikes every day.
+                    </p>
+
+                    <a href="./book-a-service.html" class="btn btn-primary">
+                        Book a Service
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+         WHO WE ARE
+    ========================== -->
+        <section class="service-section about-intro">
+
+            <div class="container">
+
+                <div class="service-section-grid">
+
+                    <div class="service-section-content">
+
+                        <span class="section-eyebrow">
+                            Who We Are
+                        </span>
+
+                        <h2>
+                            Your Bike Deserves
+                            <span>Proper Care</span>
+                        </h2>
+
+                        <p>
+                            Conselho Moto Repairs is a growing motorcycle repair
+                            and servicing workshop focused on keeping riders safe,
+                            mobile and confident on the road.
+                        </p>
+
+                        <p>
+                            We work with a small team of dedicated mechanics who
+                            understand that a motorcycle is more than just a
+                            machine. For many riders, especially delivery and
+                            commuter riders, their bike is how they get to work,
+                            earn an income and get through their day.
+                        </p>
+
+                        <p>
+                            That's why we focus on practical repairs, proper
+                            servicing and honest advice rather than simply
+                            replacing parts without understanding the problem.
+                        </p>
+
+                    </div>
+
+
+                    <div class="service-section-image">
+
+                        <img src="./images/hero-images/mechanic.jpg"
+                            alt="Conselho Moto Repairs mechanics working on a motorcycle">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+         WHAT WE DO
+    ========================== -->
+        <section class="service-section service-section-alt">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-eyebrow">
+                        What We Do
+                    </span>
+
+                    <h2>
+                        More Than Just <span>Repairs</span>
+                    </h2>
+
+                    <p>
+                        From routine maintenance to unexpected breakdowns,
+                        we help keep your motorcycle reliable and road-ready.
+                    </p>
+
+                </div>
+
+
+                <div class="services-grid">
+
+                    <article class="service-card">
+
+                        <div class="service-icon">
+                            <i class="fa-solid fa-screwdriver-wrench"></i>
+                        </div>
+
+                        <div class="service-content">
+
+                            <h3>Motorcycle Servicing</h3>
+
+                            <p>
+                                Regular servicing helps identify problems early
+                                and keeps your engine, fluids and components
+                                working as they should.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="service-card">
+
+                        <div class="service-icon">
+                            <i class="fa-solid fa-gears"></i>
+                        </div>
+
+                        <div class="service-content">
+
+                            <h3>Mechanical Repairs</h3>
+
+                            <p>
+                                From brakes and clutch systems to suspension,
+                                engine and fuel-related problems, we work to
+                                find the cause and get your bike running properly.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="service-card">
+
+                        <div class="service-icon">
+                            <i class="fa-solid fa-road"></i>
+                        </div>
+
+                        <div class="service-content">
+
+                            <h3>Roadside Assistance</h3>
+
+                            <p>
+                                When your motorcycle lets you down on the road,
+                                we provide assistance where possible to help
+                                get you moving again.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="service-card">
+
+                        <div class="service-icon">
+                            <i class="fa-solid fa-wrench"></i>
+                        </div>
+
+                        <div class="service-content">
+
+                            <h3>Preventative Maintenance</h3>
+
+                            <p>
+                                We help riders stay ahead of expensive problems
+                                with maintenance advice and checks based on the
+                                condition and use of their motorcycle.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+         WHY CHOOSE US
+    ========================== -->
+        <section class="service-section why-us-section">
+
+            <div class="container">
+
+                <div class="service-section-grid">
+
+                    <div class="service-section-image">
+
+                        <img src="./images/hero-images/outside-hero.jpg" alt="Mechanic repairing a motorcycle">
+
+                    </div>
+
+
+                    <div class="service-section-content">
+
+                        <span class="section-eyebrow">
+                            Why Conselho
+                        </span>
+
+                        <h2>
+                            A Workshop That
+                            <span>Understands Riders</span>
+                        </h2>
+
+                        <p>
+                            We know that being without your motorcycle can affect
+                            your entire day. That's why our goal is to provide
+                            straightforward service and get your bike back on the
+                            road as efficiently as possible.
+                        </p>
+
+
+                        <ul class="feature-list">
+
+                            <li>
+                                <i class="fa-solid fa-circle-check"></i>
+                                <div>
+                                    <strong>Experienced Mechanics</strong>
+                                    <span>
+                                        Skilled hands working on your motorcycle.
+                                    </span>
+                                </div>
+                            </li>
+
+
+                            <li>
+                                <i class="fa-solid fa-circle-check"></i>
+                                <div>
+                                    <strong>Honest Advice</strong>
+                                    <span>
+                                        We explain the problem before recommending
+                                        the work.
+                                    </span>
+                                </div>
+                            </li>
+
+
+                            <li>
+                                <i class="fa-solid fa-circle-check"></i>
+                                <div>
+                                    <strong>Practical Solutions</strong>
+                                    <span>
+                                        We focus on fixing the actual problem and
+                                        keeping your bike reliable.
+                                    </span>
+                                </div>
+                            </li>
+
+
+                            <li>
+                                <i class="fa-solid fa-circle-check"></i>
+                                <div>
+                                    <strong>Rider Focused</strong>
+                                    <span>
+                                        We understand the needs of commuters,
+                                        delivery riders and everyday motorcycle
+                                        users.
+                                    </span>
+                                </div>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+         OUR APPROACH
+    ========================== -->
+        <section class="service-section service-section-alt">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-eyebrow">
+                        Our Approach
+                    </span>
+
+                    <h2>
+                        Diagnose. Repair.
+                        <span>Get You Moving.</span>
+                    </h2>
+
+                    <p>
+                        Every motorcycle has a story. Our job is to understand
+                        what's wrong and help you make the right decision.
+                    </p>
+
+                </div>
+
+
+                <div class="process-grid">
+
+                    <article class="process-card">
+
+                        <span class="process-number">01</span>
+
+                        <i class="fa-solid fa-magnifying-glass"></i>
+
+                        <h3>Inspect</h3>
+
+                        <p>
+                            We look at the symptoms and inspect the motorcycle
+                            to understand what may be causing the problem.
+                        </p>
+
+                    </article>
+
+
+                    <article class="process-card">
+
+                        <span class="process-number">02</span>
+
+                        <i class="fa-solid fa-stethoscope"></i>
+
+                        <h3>Diagnose</h3>
+
+                        <p>
+                            We narrow down the problem and explain what needs
+                            attention before carrying out the repair.
+                        </p>
+
+                    </article>
+
+
+                    <article class="process-card">
+
+                        <span class="process-number">03</span>
+
+                        <i class="fa-solid fa-screwdriver-wrench"></i>
+
+                        <h3>Repair</h3>
+
+                        <p>
+                            Our mechanics carry out the required work with
+                            attention to the motorcycle's condition and use.
+                        </p>
+
+                    </article>
+
+
+                    <article class="process-card">
+
+                        <span class="process-number">04</span>
+
+                        <i class="fa-solid fa-motorcycle"></i>
+
+                        <h3>Ride</h3>
+
+                        <p>
+                            Once the work is complete, the goal is simple:
+                            get you safely back on the road.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+         BIKES WE SERVICE
+    ========================== -->
+        <section class="service-section bikes-section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-eyebrow">
+                        Built For Everyday Riders
+                    </span>
+
+                    <h2>
+                        Bikes We <span>Work On</span>
+                    </h2>
+
+                    <p>
+                        We service a range of motorcycles, with particular
+                        experience working with commuter and delivery bikes
+                        that spend long hours on the road.
+                    </p>
+
+                </div>
+
+
+                <div class="bike-types-grid">
+
+                    <div class="bike-type">
+                        <i class="fa-solid fa-motorcycle"></i>
+                        <span>Commuter Bikes</span>
+                    </div>
+
+                    <div class="bike-type">
+                        <i class="fa-solid fa-box"></i>
+                        <span>Delivery Bikes</span>
+                    </div>
+
+                    <div class="bike-type">
+                        <i class="fa-solid fa-road"></i>
+                        <span>Daily Riders</span>
+                    </div>
+
+                    <div class="bike-type">
+                        <i class="fa-solid fa-gears"></i>
+                        <span>Work Bikes</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+         GROWING WITH OUR CUSTOMERS
+    ========================== -->
+        <section class="service-section about-growth">
+
+            <div class="container">
+
+                <div class="about-growth-content">
+
+                    <span class="section-eyebrow">
+                        Growing Together
+                    </span>
+
+                    <h2>
+                        Small Workshop.
+                        <span>Big Commitment.</span>
+                    </h2>
+
+                    <p>
+                        Conselho Moto Repairs is growing, and we're proud to build
+                        that growth one customer and one motorcycle at a time.
+                    </p>
+
+                    <p>
+                        As we continue to grow, our goal remains the same:
+                        provide dependable motorcycle service, build lasting
+                        relationships with riders and become a workshop that
+                        customers can rely on whenever their bike needs attention.
+                    </p>
+
+                    <p>
+                        Whether you need a routine service, a repair or help
+                        figuring out what's wrong with your motorcycle, we're
+                        here to help.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+         FINAL CTA
+    ========================== -->
+        <section class="service-cta">
+
+            <div class="container">
+
+                <div class="service-cta-content">
+
+                    <span class="section-eyebrow">
+                        Need A Hand?
+                    </span>
+
+                    <h2>
+                        Let's Get You
+                        <span>Back On The Road</span>
+                    </h2>
+
+                    <p>
+                        Whether your bike needs a service, repair or a closer look,
+                        get in touch with Conselho Moto Repairs.
+                    </p>
+
+                    <div class="cta-buttons">
+
+                        <a href="contact.html" class="btn btn-primary">
+                            Book a Service
+                        </a>
+
+                        <a href="services.html" class="btn btn-secondary">
+                            View Our Services
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+
+    <footer class="site-footer">
+
+        <div class="footer-container">
+
+            <!-- Brand -->
+            <div class="footer-brand">
+
+                <a href="../index.html" class="footer-logo">
+                    <span>Conselho</span>Moto Repairs
+                </a>
+                <p>
+                    Reliable motorcycle repairs, servicing and roadside
+                    assistance to keep you safely on the road.
+                </p>
+
+                <div class="footer-socials">
+
+                    <a href="#" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#" aria-label="WhatsApp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Quick Links -->
+            <div class="footer-column">
+
+                <h3>Quick Links</h3>
+
+                <a href="#">Home</a>
+                <a href="#">Services</a>
+                <a href="#">About Us</a>
+                <a href="#">Contact</a>
+
+            </div>
+
+
+            <!-- Services -->
+            <div class="footer-column">
+
+                <h3>Services</h3>
+
+                <a href="#">Bike Servicing</a>
+                <a href="#">Brake Repairs</a>
+                <a href="#">Chain & Sprocket</a>
+                <a href="#">Battery Services</a>
+                <a href="#">Roadside Assistance</a>
+
+            </div>
+
+
+            <!-- Contact -->
+            <div class="footer-column footer-contact">
+
+                <h3>Get In Touch</h3>
+
+                <a href="tel:27691736131">
+                    <i class="fa-solid fa-phone"></i>
+                    27691736131
+                </a>
+
+                <a href="https://wa.me/27691736131">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    WhatsApp Us
+                </a>
+
+                <a href="#">
+                    <i class="fa-solid fa-envelope"></i>
+                    info@conselho.co.za
+                </a>
+
+                <a href="#">
+                    <i class="fa-solid fa-location-dot"></i>
+                    Cape Town, South Africa
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- Bottom -->
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 conselho. All rights reserved.
+            </p>
+
+            <div class="footer-bottom-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+
 </body>
+
 </html>

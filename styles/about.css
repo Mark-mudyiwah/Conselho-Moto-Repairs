@@ -1,0 +1,475 @@
+
+/* =========================================================
+   CONSELHO MOTO REPAIRS
+   ABOUT PAGE CSS
+   ========================================================= */
+
+
+/* =========================================================
+   ABOUT HERO
+========================================================= */
+
+.about-hero {
+    min-height: 520px;
+    background-image: url("../images/about/about-hero.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.about-hero .service-hero-content {
+    max-width: 720px;
+}
+
+.about-hero h1 {
+    max-width: 700px;
+}
+
+.about-hero h1 span {
+    color: #e63946;
+}
+
+.about-hero p {
+    max-width: 600px;
+}
+
+
+/* =========================================================
+   ABOUT INTRO / WHO WE ARE
+========================================================= */
+
+.about-intro {
+    padding: 90px 0;
+}
+
+.about-intro .service-section-content {
+    max-width: 650px;
+}
+
+.about-intro .service-section-image {
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.about-intro .service-section-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+
+/* =========================================================
+   SECTION HEADINGS
+========================================================= */
+
+.section-eyebrow {
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #e63946;
+}
+
+.section-heading {
+    max-width: 720px;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+
+.section-heading h2 {
+    margin-bottom: 15px;
+}
+
+.section-heading h2 span {
+    color: #e63946;
+}
+
+.section-heading p {
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   WHAT WE DO
+========================================================= */
+
+.service-section-alt {
+    background: #f7f7f7;
+}
+
+.service-section-alt .services-grid {
+    margin-top: 20px;
+}
+
+.service-section-alt .service-card {
+    height: 100%;
+}
+
+
+/* =========================================================
+   SERVICE ICONS
+========================================================= */
+
+.service-icon {
+    width: 58px;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    background: #f1f1f1;
+    color: #e63946;
+    font-size: 1.4rem;
+}
+
+.service-card:hover .service-icon {
+    background: #e63946;
+    color: #fff;
+    transition: 0.3s ease;
+}
+
+
+/* =========================================================
+   WHY CHOOSE US
+========================================================= */
+
+.why-us-section {
+    padding: 90px 0;
+}
+
+.why-us-section .service-section-image {
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.why-us-section .service-section-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.why-us-section .service-section-content {
+    max-width: 650px;
+}
+
+
+/* =========================================================
+   FEATURE LIST
+========================================================= */
+
+.feature-list {
+    list-style: none;
+    padding: 0;
+    margin: 30px 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.feature-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+}
+
+.feature-list li > i {
+    color: #e63946;
+    font-size: 1.1rem;
+    margin-top: 4px;
+    flex-shrink: 0;
+}
+
+.feature-list li div {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.feature-list strong {
+    font-size: 1rem;
+    color: #222;
+}
+
+.feature-list span {
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   OUR APPROACH / PROCESS
+========================================================= */
+
+.process-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    margin-top: 20px;
+}
+
+.process-card {
+    position: relative;
+    background: #fff;
+    padding: 35px 25px;
+    border-radius: 12px;
+    text-align: center;
+    border: 1px solid #e8e8e8;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.process-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.process-number {
+    display: block;
+    margin-bottom: 20px;
+    color: #e63946;
+    font-size: 0.8rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.process-card > i {
+    display: block;
+    margin-bottom: 18px;
+    color: #222;
+    font-size: 2rem;
+}
+
+.process-card h3 {
+    margin-bottom: 12px;
+    font-size: 1.15rem;
+}
+
+.process-card p {
+    margin: 0;
+    color: #666;
+    font-size: 0.92rem;
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   BIKES WE SERVICE
+========================================================= */
+
+.bikes-section {
+    padding: 90px 0;
+}
+
+.bike-types-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+.bike-type {
+    min-height: 130px;
+    padding: 25px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    text-align: center;
+    border: 1px solid #e5e5e5;
+    border-radius: 12px;
+    background: #fff;
+    transition: 0.3s ease;
+}
+
+.bike-type i {
+    color: #e63946;
+    font-size: 1.8rem;
+}
+
+.bike-type span {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.bike-type:hover {
+    transform: translateY(-5px);
+    border-color: #e63946;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);
+}
+
+
+/* =========================================================
+   GROWING WITH OUR CUSTOMERS
+========================================================= */
+
+.about-growth {
+    padding: 90px 0;
+    background: #f7f7f7;
+}
+
+.about-growth-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-growth-content h2 {
+    margin-bottom: 20px;
+}
+
+.about-growth-content h2 span {
+    color: #e63946;
+}
+
+.about-growth-content p {
+    max-width: 720px;
+    margin: 0 auto 18px;
+}
+
+
+/* =========================================================
+   FINAL CTA
+========================================================= */
+
+.service-cta {
+    padding: 100px 0;
+    background: #171717;
+    color: #fff;
+}
+
+.service-cta-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.service-cta .section-eyebrow {
+    color: #e63946;
+}
+
+.service-cta h2 {
+    color: #fff;
+    margin-bottom: 18px;
+}
+
+.service-cta h2 span {
+    color: #e63946;
+}
+
+.service-cta p {
+    max-width: 650px;
+    margin: 0 auto 30px;
+    color: #ccc;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .process-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .bike-types-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    .about-hero {
+        min-height: 460px;
+    }
+
+    .about-intro,
+    .why-us-section,
+    .bikes-section,
+    .about-growth {
+        padding: 65px 0;
+    }
+
+    .service-cta {
+        padding: 70px 0;
+    }
+
+    .process-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .bike-types-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .bike-type {
+        min-height: 110px;
+        padding: 20px 12px;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .about-hero {
+        min-height: 430px;
+    }
+
+    .about-hero .service-hero-content {
+        padding: 20px 0;
+    }
+
+    .section-heading {
+        margin-bottom: 35px;
+    }
+
+    .feature-list {
+        gap: 18px;
+    }
+
+    .bike-types-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .bike-type span {
+        font-size: 0.85rem;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .cta-buttons .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+}
+

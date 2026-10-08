@@ -121,29 +121,7 @@ export const services = [
         description: "Inspection and repair of suspension components to improve handling, comfort and road stability.",
         price: " R350",
         icon: "fa-solid fa-arrows-up-down",
-        link: "services/suspension.html",
-        featured: false
-    },
-
-    {
-        id: "wheel-services",
-        name: "Wheel Services",
-        image: "images/services/wheels.jfif",
-        description: "Wheel inspections, alignment checks and repairs to help keep your motorcycle stable on the road.",
-        price: " R200",
-        icon: "fa-solid fa-circle",
-        link: "services/wheel-services.html",
-        featured: false
-    },
-
-    {
-        id: "diagnostics",
-        name: "Motorcycle Diagnostics",
-        image: "images/services/diagnostics.jfif",
-        description: "Identify motorcycle problems through systematic inspection and diagnostic testing.",
-        price: " R250",
-        icon: "fa-solid fa-magnifying-glass",
-        link: "services/diagnostics.html",
+        link: "services/suspension-service.html",
         featured: false
     },
 
@@ -165,7 +143,7 @@ export const services = [
         description: "Need help where you are? Get roadside assistance when your motorcycle breaks down or won't start.",
         price: " R300",
         icon: "fa-solid fa-truck-pickup",
-        link: "services/roadside-assistance.html",
+        link: "services/roadside-assistance-service.html",
         featured: false
     }
 
