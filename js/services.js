@@ -26,7 +26,7 @@ export const services = [
     {
         id: "brake-repairs",
         name: "Brake Repairs",
-        image: "images/services/brake-hub-2.jpg",
+        image: "images/services/brake-hub.jfif",
         description: "Brake inspections, pad replacements and repairs to keep your motorcycle stopping safely.",
         featuredDescription: "Don’t take chances with your brakes. Get reliable stopping power and ride with confidence.",
         price: " R250",
@@ -82,7 +82,7 @@ export const services = [
     {
         id: "clutch-repairs",
         name: "Clutch Repairs",
-        image: "images/services/clutch.webp",
+        image: "images/services/clutch-components.jfif",
         description: "Clutch inspection, adjustment and replacement to improve gear changes and riding performance.",
         price: " R300",
         icon: "fa-solid fa-sliders",
