@@ -345,24 +345,26 @@
                             <div class="form-row">
 
                                 <div class="form-group">
-                                    <label for="email">Email Address</label>
+                                    <label for="email">Email Address *</label>
 
                                     <input
                                         type="email"
                                         id="email"
                                         name="Email Address"
                                         placeholder="you@example.com"
-                                        autocomplete="email">
+                                        autocomplete="email"
+                                        required>
                                 </div>
 
                                 <div class="form-group">
-                                    <label for="bike">Motorcycle Type</label>
+                                    <label for="bike">Motorcycle Type *</label>
 
                                     <input
                                         type="text"
                                         id="bike"
                                         name="Motorcycle"
-                                        placeholder="e.g. Honda, Big Boy, TVS">
+                                        placeholder="e.g. Honda, Big Boy, TVS"
+                                        required>
                                 </div>
 
                             </div>
@@ -786,8 +788,9 @@
         </div>
 
     </footer>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
-
+<script src="./js/forms/enquiry.js"></script>
 
 </body>
 
